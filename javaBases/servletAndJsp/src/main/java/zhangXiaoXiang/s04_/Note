@@ -1,0 +1,12 @@
+Servlet 激活器
+
+# Tomcat 的 examples 应用程序中的例子 Servlet 的访问路径
+
+# 如果某个Servlet 的映射路径为 正斜杠"/"，那么这个 Servlet 就是
+	当前 Web 应用程序的 缺省 Servlet
+
+# 凡是在 web.xml 中找不到匹配的<servlet-mapping> 元素的 URL，
+	则都会交给缺省 Servlet 进行处理。
+
+
+
