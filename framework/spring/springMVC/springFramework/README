@@ -1,4 +1,8 @@
+
+Spring MVC Tutorials for building web apps!
+
 spring 4.0 reference documents note...
+
 
 Spring MVC Hello World Example
 http://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-hello-world-example/
@@ -8,4 +12,14 @@ http://www.javacodegeeks.com/2013/09/spring-mvc-ajax-jquery.html
 
 Migrating Spring MVC RESTful web services to Spring 4
 http://www.javacodegeeks.com/2014/02/migrating-spring-mvc-restful-web-services-to-spring-4.html
+
+Spring MVC: Security with MySQL and Hibernate
+http://www.javacodegeeks.com/2013/05/spring-mvc-security-with-mysql-and-hibernate.html
+
+SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig
+http://www.javacodegeeks.com/2014/03/springmvc4-spring-data-jpa-springsecurity-configuration-using-javaconfig.html
+
+
+
+
 
