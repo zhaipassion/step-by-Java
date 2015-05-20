@@ -28,6 +28,9 @@
 	<listener>
 		<listener-class>liXingHua.listener.ListenerDemo</listener-class>
 	</listener>
+	<listener>
+		<listener-class>liXingHua.listener.AttributeListenerDemo</listener-class>
+	</listener>
 
 	<!-- ################################### 李兴华结束 ######################################### -->
 
