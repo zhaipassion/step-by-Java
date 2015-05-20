@@ -13,7 +13,7 @@ public class ClassLoaderTest {
 		System.out.println(cl == null ? "null" : cl.getClass().getName());
 		cl = javax.swing.Box.class.getClassLoader();
 		System.out.println(cl == null ? "null" : cl.getClass().getName());
-		cl = sun.net.spi.nameservice.dns.DNSNameService.class.getClassLoader();
+//		cl = sun.net.spi.nameservice.dns.DNSNameService.class.getClassLoader();
 		System.out.println(cl == null ? "null" : cl.getClass().getName());
 		cl = ClassLoaderTest.class.getClassLoader();
 		System.out.println(cl == null ? "null" : cl.getClass().getName());

@@ -22,7 +22,13 @@ Filter是在Servlet2.3之后增加的新功能，当需要限制用户访问某�
     <url-pattern>/*</url-pattern>
 </filter-mapping>
 
+3、生命周期
+和servlet的声明周期相似
 
+
+4、使用场景
+编码验证
+登陆验证
 
 
 
