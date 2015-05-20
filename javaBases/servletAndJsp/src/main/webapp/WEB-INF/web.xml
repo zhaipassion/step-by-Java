@@ -6,16 +6,7 @@
 	<display-name>Archetype Created Web Application</display-name>
 	<!-- ################################### 李兴华开始 ######################################### -->
 	<filter>
-		<filter-name>loginFilter</filter-name>
-		<filter-class>liXingHua.filter.LoginFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>loginFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
-	<filter>
-		<filter-name>simple</filter-name>
+		<filter-name>simpleFilter</filter-name>
 		<filter-class>liXingHua.filter.FilterDemo</filter-class>
 		<init-param>
 			<param-name>ref</param-name>
@@ -23,9 +14,21 @@
 		</init-param>
 	</filter>
 	<filter-mapping>
-		<filter-name>simple</filter-name>
+		<filter-name>simpleFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>liXingHua.filter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>liXingHua.listener.ListenerDemo</listener-class>
+	</listener>
+
 	<!-- ################################### 李兴华结束 ######################################### -->
 
 	<!-- ################################### 张孝祥开始 ######################################### -->
