@@ -11,6 +11,7 @@
 
 1、spring tutorial URLs:
 http://www.javatpoint.com/spring-3-mvc-tutorial
+http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html
 
 2. entry specification
 
