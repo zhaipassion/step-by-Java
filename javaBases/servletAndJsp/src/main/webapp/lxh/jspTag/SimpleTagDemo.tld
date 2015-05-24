@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- 标签版本 -->
+	<tlib-version>1.0</tlib-version>
+	<!-- 标签段名称，页面引用 -->
+	<short-name>SimpleTagDemo</short-name>
+	<!-- 标签库中的每一个标签 -->
+	<tag>
+		<!-- 标签名称 -->
+		<name>helloWorld</name>
+		<!-- 标签处理类的路径 -->
+		<tag-class>liXingHua.jspTag.SimpleTagDemo</tag-class>
+		<!-- 标签中是否包含标签体，如果是empty，表示标签体为空 -->
+		<body-content>empty</body-content>
+	</tag>
+</taglib>
