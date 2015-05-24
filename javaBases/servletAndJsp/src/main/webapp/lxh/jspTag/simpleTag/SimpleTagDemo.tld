@@ -11,7 +11,7 @@
 		<!-- 标签名称 -->
 		<name>helloWorld</name>
 		<!-- 标签处理类的路径 -->
-		<tag-class>liXingHua.jspTag.SimpleTagDemo</tag-class>
+		<tag-class>liXingHua.jspTag.simpleTag.SimpleTagDemo</tag-class>
 		<!-- 标签中是否包含标签体，如果是empty，表示标签体为空 -->
 		<body-content>empty</body-content>
 	</tag>

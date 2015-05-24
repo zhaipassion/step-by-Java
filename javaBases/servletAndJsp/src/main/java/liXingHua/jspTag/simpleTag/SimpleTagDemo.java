@@ -1,4 +1,4 @@
-package liXingHua.jspTag;
+package liXingHua.jspTag.simpleTag;
 
 import java.io.IOException;
 
