@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>servletAndJsp</name>
-	<description>网络编程</description>
+	<description>网页编程</description>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
