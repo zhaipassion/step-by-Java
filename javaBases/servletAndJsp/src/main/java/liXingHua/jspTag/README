@@ -1,4 +1,10 @@
 
+三个范例的访问地址是：
+http://localhost:8080/servletAndJsp/lxh/jspTag/simpleTag/simpleTagDemo.jsp
+http://localhost:8080/servletAndJsp/lxh/jspTag/attriTag/attriTagDemo.jsp
+
+
+
 标签编程在实际开发中，并不常见，一般是大量的使用已将开发好的标签，
 比如，JSTL或者Struts都有标签，本节主要是介绍标签的原理。
 目标：
@@ -30,7 +36,6 @@ tld文件：
 
 eclipse中新建tag文件的时候，会提示：
 Tag files outside of /WEB-INF/tags/ will be ignored by the JSP container.
-
 
 
 
