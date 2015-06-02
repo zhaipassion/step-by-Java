@@ -11,15 +11,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CustomArgumentController {
 
-	@ModelAttribute
-	void beforeInvokingHandlerMethod(HttpServletRequest request) {
-		request.setAttribute("foo", "bar");
-	}
+    @ModelAttribute
+    void beforeInvokingHandlerMethod(HttpServletRequest request) {
+        request.setAttribute("foo", "bar");
+    }
 
-	@RequestMapping(value = "/data/custom", method = RequestMethod.GET)
-	public @ResponseBody
-	String custom(@RequestAttribute("foo") String foo) {
-		return "Got 'foo' request attribute value '" + foo + "'";
-	}
+    @RequestMapping(value = "/data/custom", method = RequestMethod.GET)
+    public @ResponseBody String custom(@RequestAttribute("foo") String foo) {
+        return "Got 'foo' request attribute value '" + foo + "'";
+    }
 
 }
