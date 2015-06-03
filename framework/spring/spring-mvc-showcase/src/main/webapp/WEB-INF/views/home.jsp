@@ -531,26 +531,62 @@ $(document).ready(function() {
 	$("#readForm").submit(function() {
 		var form = $(this);
 		var button = form.children(":first");
-		$.ajax({ type: "POST", url: form.attr("action"), data: "foo=bar&fruit=apple", contentType: "application/x-www-form-urlencoded", dataType: "text", success: function(text) { MvcUtil.showSuccessResponse(text, button); }, error: function(xhr) { MvcUtil.showErrorResponse(xhr.responseText, button); }});
+		$.ajax({ 
+			type: "POST", 
+			url: form.attr("action"), 
+			data: "foo=bar&fruit=apple", 
+			contentType: "application/x-www-form-urlencoded", 
+			dataType: "text", 
+			success: function(text) { 
+				MvcUtil.showSuccessResponse(text, button); 
+			}, 
+			error: function(xhr) { 
+				MvcUtil.showErrorResponse(xhr.responseText, button); }
+		});
 		return false;
 	});
 
 	$("#writeForm").click(function() {
 		var link = $(this);
-		$.ajax({ url: this.href, dataType: "text", beforeSend: function(req) { req.setRequestHeader("Accept", "application/x-www-form-urlencoded"); }, success: function(form) { MvcUtil.showSuccessResponse(form, link); }, error: function(xhr) { MvcUtil.showErrorResponse(xhr.responseText, link); }});					
+		$.ajax({ 
+			url: this.href, 
+			dataType: "text", 
+			beforeSend: function(req) {
+				req.setRequestHeader("Accept", "application/x-www-form-urlencoded"); 
+			},
+			success: function(form) {
+				MvcUtil.showSuccessResponse(form, link); 
+			},
+			error: function(xhr) { 
+				MvcUtil.showErrorResponse(xhr.responseText, link); 
+			}
+		});				
 		return false;
 	});
 
 	$("form.readXmlForm").submit(function() {
 		var form = $(this);
 		var button = form.children(":first");
-		$.ajax({ type: "POST", url: form.attr("action"), data: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><javaBean><foo>bar</foo><fruit>apple</fruit></javaBean>", contentType: "application/xml", dataType: "text", success: function(text) { MvcUtil.showSuccessResponse(text, button); }, error: function(xhr) { MvcUtil.showErrorResponse(xhr.responseText, button); }});
+		$.ajax({ 
+			type: "POST", 
+			url: form.attr("action"), 
+			data: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><javaBean><foo>bar</foo><fruit>apple</fruit></javaBean>", 
+			contentType: "application/xml", 
+			dataType: "text", 
+			success: function(text) { 
+				MvcUtil.showSuccessResponse(text, button); 
+			}, 
+			error: function(xhr) { 
+				MvcUtil.showErrorResponse(xhr.responseText, button); 
+			}
+		});
 		return false;
 	});
 
 	$("a.writeXmlLink").click(function() {
 		var link = $(this);
-		$.ajax({ url: link.attr("href"),
+		$.ajax({ 
+			url: link.attr("href"),
 			beforeSend: function(req) { 
 				if (!this.url.match(/\.xml$/)) {
 					req.setRequestHeader("Accept", "application/xml");
@@ -572,7 +608,19 @@ $(document).ready(function() {
 		var data = form.hasClass("invalid") ?
 				"{ \"foo\": \"bar\" }" : 
 				"{ \"foo\": \"bar\", \"fruit\": \"apple\" }";
-		$.ajax({ type: "POST", url: form.attr("action"), data: data, contentType: "application/json", dataType: "text", success: function(text) { MvcUtil.showSuccessResponse(text, button); }, error: function(xhr) { MvcUtil.showErrorResponse(xhr.responseText, button); }});
+		$.ajax({ 
+			type: "POST", 
+			url: form.attr("action"), 
+			data: data, 
+			contentType: "application/json", 
+			dataType: "text", 
+			success: function(text) { 
+				MvcUtil.showSuccessResponse(text, button); 
+			}, 
+			error: function(xhr) { 
+				MvcUtil.showErrorResponse(xhr.responseText, button); 
+			}
+		});
 		return false;
 	});
 
