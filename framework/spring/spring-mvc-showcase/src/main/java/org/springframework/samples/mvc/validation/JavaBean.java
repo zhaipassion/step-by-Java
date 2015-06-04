@@ -10,30 +10,30 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 public class JavaBean {
-	
-	@NotNull
-	@Max(5)
-	private Integer number;
 
-	@NotNull
-	@Future
-	@DateTimeFormat(iso=ISO.DATE)
-	private Date date;
+    @NotNull
+    @Max(5)
+    private Integer number;
 
-	public Integer getNumber() {
-		return number;
-	}
+    @NotNull
+    @Future
+    @DateTimeFormat(iso = ISO.DATE)
+    private Date date;
 
-	public void setNumber(Integer number) {
-		this.number = number;
-	}
+    public Integer getNumber() {
+        return number;
+    }
 
-	public Date getDate() {
-		return date;
-	}
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
 
-	public void setDate(Date date) {
-		this.date = date;
-	}
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
 }
