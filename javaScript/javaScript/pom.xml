@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.haizhu</groupId>
+	<groupId>com.bob</groupId>
 	<artifactId>javaScript</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
@@ -50,8 +50,8 @@
 				<configuration>
 					<!-- tomcat部署路径，不配置的话默认是项目名称 ，如果配置为“/”表示根目录 -->
 					<path>/jsDemo</path>
-					<!-- 怎么指定tomcat的端口号？ -->
-
+					<!-- 指定tomcat的端口号？ -->
+					<port>8080</port>
 					<!-- <url>http://www.mydomain.com:8080/haizhu</url> -->
 					<!-- <server>jsTomcatServer</server> -->
 					<!-- <username>jsTomcat</username> -->
