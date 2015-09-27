@@ -1,0 +1,40 @@
+
+1、运行方法
+
+1.1 每个范例运行的时候都有一定的执行条件
+run as -> run configurations -> java application -> 选中
+需要配置的文件 -> arguments -> VM arguments ->配置条件写进去即可
+
+1.2 此文件夹中的每个类对应一个异常范例，运行main函数即可
+
+
+2、class类及其对应的异常范例
+
+2.1 堆内存溢出异常：Heap OutOfMemoryError
+demo class：HeapOOM
+
+2.2 虚拟机栈和本地方法栈异常：stackOverFlowError
+demo class：JavaVMStackSOF
+
+2.3 创建线程导致虚拟机栈内存溢出异常：OutOfMemoryError
+demo class：JavaVMStackOOM
+
+2.4 运行时常量池导致的非栈内存溢出异常：
+demo class：RuntimeConstantPoolOOM
+
+2.5 运行时导致的非栈内存溢出异常
+demo class: DirectMemoryOOM
+
+
+
+
+
+
+
+
+
+
+
+
+
+

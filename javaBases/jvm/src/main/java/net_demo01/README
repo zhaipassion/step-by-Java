@@ -1,0 +1,7 @@
+http://www.importnew.com/14604.html
+
+1、栈溢出(StackOverflowError)
+demo class: SOF_OOM
+
+2、堆溢出(OutOfMemoryError:java heap space)
+demo class: Heap_OOM

@@ -1,0 +1,24 @@
+
+
+
+1、验证java不是使用引用技术算法进行数据回收，也可以说是引用技术算法的缺陷，
+当然优点是相对于可达性分析算法来说更高效快速
+demo class：ReferenceCountingGC
+
+2、一次对象自我拯救的演示
+demo class: FinalizeEscapeGC
+
+3、新生代Minor GC
+demo class: Allocation
+
+
+
+
+
+
+
+
+
+
+
+

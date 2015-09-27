@@ -1,5 +1,14 @@
-target
+target/
 */temp
 .settings/
 .classpath
 .project
+*.iml
+
+
+*/target/
+*/temp
+*/.settings/
+*/.classpath
+*/.project
+*/*.iml
