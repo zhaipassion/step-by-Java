@@ -12,6 +12,6 @@
  * 改：
  * set(index,element)
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.collection.c02_List;

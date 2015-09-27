@@ -1,7 +1,7 @@
 package com.bob.reflect.rf06_getParents;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: 获取反射类的父类和父接口
  * @Description: TODO(描述)
  * @date 2014年1月8日 下午8:09:46

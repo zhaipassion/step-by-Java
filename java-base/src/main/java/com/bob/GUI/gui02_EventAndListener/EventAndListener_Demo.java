@@ -15,7 +15,7 @@ import java.awt.event.WindowEvent;
  * <p>
  * 我们要做的就是对产生的动作进行处理
  *
- * @author Haizhu
+ * @author Bob
  */
 public class EventAndListener_Demo {
     public static void main(String[] args) {

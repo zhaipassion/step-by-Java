@@ -1,7 +1,7 @@
 package book01.chapter03;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: ReferenceCountingGC
  * @Description: 验证java是不是使用引用技术算法进行数据回收：testGC()方法执行后，objA和objB会不会被GC呢？
  * @date 2015年2月4日 下午7:27:09

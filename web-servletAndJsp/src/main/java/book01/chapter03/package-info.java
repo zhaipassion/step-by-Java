@@ -2,7 +2,7 @@
  * @Title: package-info.java
  * @Package book01.chapter03
  * @Description: 第三章：servlet基础
- * @author HZ
+ * @author Bob
  * @date 2015年2月13日 下午1:34:49
  */
 

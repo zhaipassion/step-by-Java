@@ -1,7 +1,7 @@
 package com.books.book01.chapter05.HashCodeDemo;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: HashCodeDemo
  * @Description:
  * @date 2015年2月15日 下午5:15:58

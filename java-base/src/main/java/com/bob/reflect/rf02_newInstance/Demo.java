@@ -3,7 +3,7 @@ package com.bob.reflect.rf02_newInstance;
 import com.bob.reflect.Student;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: 通过反射取得类型，之后创建对象
  * @Description: TODO(描述)
  * @date 2014年1月7日 上午12:07:04

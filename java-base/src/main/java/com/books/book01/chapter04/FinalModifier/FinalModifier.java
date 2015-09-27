@@ -1,7 +1,7 @@
 package com.books.book01.chapter04.FinalModifier;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: FinalModifier
  * @Description: final修饰符范例
  * @chapter 4.3.9 Final实例域

@@ -7,7 +7,7 @@
  * 3、servlet代码初探
  * 4、servlet和其他技术的对比
  * 5、jsp的作用
- * @author HZ
+ * @author Bob
  * @date 2015年2月13日 下午12:53:55
  */
 package book01.chapter01;

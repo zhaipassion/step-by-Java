@@ -5,7 +5,7 @@ package thread_Demo.t11_applicationTest;
  * if the first takes a long time, it will be not good for the next two,
  * so, we can use Thread to solve this problem.
  *
- * @author Haizhu
+ * @author Bob
  */
 public class ThreadDemo {
     public static void main(String[] args) {

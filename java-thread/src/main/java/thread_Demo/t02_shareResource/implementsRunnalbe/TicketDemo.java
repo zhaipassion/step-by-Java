@@ -5,7 +5,7 @@ package com.haizhu.thread_Demo.t02_shareResource.implementsRunnalbe;
  * but cann't control the negative number,
  * to see the next demo to solve this problem
  *
- * @author Haizhu
+ * @author Bob
  */
 public class TicketDemo {
     public static void main(String[] args) {

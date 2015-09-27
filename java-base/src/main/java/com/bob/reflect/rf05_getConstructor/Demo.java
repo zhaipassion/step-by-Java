@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: Demo
  * @Description: 获取构造方法并创建对象
  * @date 2014年1月8日 下午8:10:10

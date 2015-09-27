@@ -7,7 +7,7 @@ import thread_Demo.t03_synchronized.Ticket;
  * and control the negative number.Attention,use the "Object" class
  * as the lock.
  *
- * @author Haizhu
+ * @author Bob
  */
 public class TicketDemo {
     public static void main(String[] args) {

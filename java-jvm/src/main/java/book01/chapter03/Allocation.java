@@ -1,7 +1,7 @@
 package book01.chapter03;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: Allocation
  * @Description: VM参数：-verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8
  * @date 2015年2月4日 下午9:00:50

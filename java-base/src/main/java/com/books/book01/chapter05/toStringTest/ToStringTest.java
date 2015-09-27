@@ -3,7 +3,7 @@ package com.books.book01.chapter05.toStringTest;
 import java.util.Arrays;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: ToStringTest
  * @Description: toString方法测试，一般对象两种调用方法，数组只有一种方法
  * @date 2015年2月19日 下午3:35:31

@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 /**
  * 没有具体作用，简单的控制台打印
  *
- * @author HZ
+ * @author Bob
  */
 public class ListenerDemo implements ServletContextListener {
 

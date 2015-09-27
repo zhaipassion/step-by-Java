@@ -7,7 +7,7 @@ import javax.jws.WebService;
 /**
  * 服务实现类SIB
  *
- * @author HZ
+ * @author Bob
  */
 @WebService(endpointInterface = "myweb.service.TimeServer")
 public class TimeServerImpl implements TimeServer {

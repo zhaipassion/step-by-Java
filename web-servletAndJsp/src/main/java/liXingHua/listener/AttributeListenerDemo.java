@@ -6,7 +6,7 @@ import javax.servlet.ServletContextAttributeListener;
 /**
  * 对属性监听
  *
- * @author HZ
+ * @author Bob
  */
 public class AttributeListenerDemo implements ServletContextAttributeListener {
 

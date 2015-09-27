@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Properties;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: PptF01_ReadInfoFromFile
  * @Description: property文件测试
  * @date 2014年1月7日 下午10:11:08

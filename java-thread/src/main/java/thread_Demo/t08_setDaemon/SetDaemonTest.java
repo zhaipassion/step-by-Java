@@ -3,7 +3,7 @@ package thread_Demo.t08_setDaemon;
 /**
  * anoter way to stop the thread
  *
- * @author Haizhu
+ * @author Bob
  *         Tips: use this method before start() method
  */
 public class SetDaemonTest {

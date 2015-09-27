@@ -13,6 +13,6 @@
  * 4、CardLayout：卡片式布局，选项卡
  * 5、GridBagLayout：网格包式布局，非规则的矩阵
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.GUI;

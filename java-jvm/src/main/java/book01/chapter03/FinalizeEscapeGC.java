@@ -1,7 +1,7 @@
 package book01.chapter03;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: FinalizeEscapeGC
  * @Description: 一次对象自我拯救的演示
  * @date 2015年2月4日 下午7:43:18

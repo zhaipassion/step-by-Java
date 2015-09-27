@@ -3,7 +3,7 @@ package com.bob.reflect.rf01_getClass;
 import com.bob.reflect.Student;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: Demo
  * @Description: 获取class的三种方法
  * @date 2014年1月6日 下午11:46:02

@@ -1,7 +1,7 @@
 package com.bob.baseTutorials.abstract_Class;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: AbstractClass
  * @Description: 面向对象程序设计的一个特别有用的特点是抽象类(abstract class)，
  * 利用抽象类，你可以声明仅定义了部分实现的类，让继承类提供某些或全部的

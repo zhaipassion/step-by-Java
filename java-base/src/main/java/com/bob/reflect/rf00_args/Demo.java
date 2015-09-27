@@ -3,7 +3,7 @@ package com.bob.reflect.rf00_args;
 import java.util.Date;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: 可变长参数
  * @Description: TODO(描述)
  * @date 2014年1月7日 下午9:36:56

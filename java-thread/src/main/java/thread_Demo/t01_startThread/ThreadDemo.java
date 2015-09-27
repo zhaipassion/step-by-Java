@@ -3,7 +3,7 @@ package thread_Demo.t01_startThread;
 /**
  * the thread class
  *
- * @author Haizhu
+ * @author Bob
  */
 public class ThreadDemo extends Thread {
     ThreadDemo(String name) {

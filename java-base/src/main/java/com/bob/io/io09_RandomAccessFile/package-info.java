@@ -6,10 +6,10 @@
  * 是因为内部封装了字节输出流和字节输出流。
  * 通过构造函数可以看出，此类只能操作文件，并且只有四种模式："r","rw","rws","rwd"
  *
- * @author Haizhu
+ * @author Bob
  */
 /**
- * @author Haizhu
+ * @author Bob
  *
  */
 package com.bob.io.io09_RandomAccessFile;

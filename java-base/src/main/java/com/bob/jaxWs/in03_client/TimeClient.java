@@ -10,7 +10,7 @@ import java.net.URL;
 /**
  * Java客户端：
  *
- * @author HZ
+ * @author Bob
  */
 public class TimeClient {
     public static void main(String[] args) throws Exception {

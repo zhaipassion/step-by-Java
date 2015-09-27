@@ -27,7 +27,7 @@ public class Outer {
      * 要注意的是，成员内部类不能含有static的变量和方法。因为成员内部类需要先创建了外部类，才能创建它自己的，在成员内部类要引用外部类对象时，
      * 使用Outter.this来表示外部类对象
      *
-     * @author Haizhu
+     * @author Bob
      */
     public class Inner {
         public void print(String str) {

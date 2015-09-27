@@ -4,7 +4,7 @@ package thread_Demo.t04_anotherDemo;
  * think about the OOP,the thread only do the things about thread,
  * specific operation, such as add() method, should in the Bank,Cus class.
  *
- * @author Haizhu
+ * @author Bob
  */
 public class TestBankAndCust {
     public static void main(String[] args) {

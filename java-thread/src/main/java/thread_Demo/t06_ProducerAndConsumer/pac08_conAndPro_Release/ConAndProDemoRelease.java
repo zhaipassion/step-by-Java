@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * condition_pro,condtion_con only weak the opposite thread
  *
- * @author Haizhu
+ * @author Bob
  */
 public class ConAndProDemoRelease {
     public static void main(String[] args) {

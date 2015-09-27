@@ -1,7 +1,7 @@
 package book01.chapter02;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: JavaVMStackOOM
  * @Description: 创建线程导致内存溢出异常
  * @VM_args -Xss2M

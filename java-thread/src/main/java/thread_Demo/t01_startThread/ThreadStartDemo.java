@@ -3,7 +3,7 @@ package thread_Demo.t01_startThread;
 /**
  * test the thread
  *
- * @author Haizhu
+ * @author Bob
  *         in this demo,there are three threads: two demo threads, one main thread
  */
 public class ThreadStartDemo {

@@ -12,7 +12,7 @@ package thread_Demo.t07_stop;
  * followed by the main thread, but if the wait() method exists,
  * -->use interrupt()
  *
- * @author Haizhu
+ * @author Bob
  */
 public class StopThreadTest {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.bob.array.a01_init;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: InitArray
  * @Description: 数组初始化的三种方法
  * @date 2015年2月14日 上午12:04:57

@@ -6,7 +6,7 @@ import java.util.Random;
  * the ticket demo class and function
  * the class extends Thread,so that every thread get 10 tickets to iterator
  *
- * @author Haizhu
+ * @author Bob
  */
 public class Ticket extends Thread {
     private Integer tickets = 10;
