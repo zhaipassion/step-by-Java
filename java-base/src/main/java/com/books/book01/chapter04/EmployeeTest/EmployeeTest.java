@@ -30,7 +30,7 @@ public class EmployeeTest {
 }
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: Employee
  * @Description: 在这个示例程序中包含两个类：一个Employee类；一个带有public访问修饰符的EmployeeTest类。
  * EmployeeTest类包含了 main方法，其中使用了前面介绍的指令。HZ：Employee类只能添加final修饰符，

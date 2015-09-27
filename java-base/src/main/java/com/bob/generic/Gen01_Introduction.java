@@ -21,7 +21,7 @@ public class Gen01_Introduction {
 /**
  * 没有泛型的时候使用Object
  *
- * @author Haizhu
+ * @author Bob
  */
 class Tool {
     private Object obj;
@@ -39,7 +39,7 @@ class Tool {
  * 使用泛型
  *
  * @param <GenericDemo>
- * @author Haizhu
+ * @author Bob
  */
 class Utils<GenericDemo> {
     private GenericDemo gd;

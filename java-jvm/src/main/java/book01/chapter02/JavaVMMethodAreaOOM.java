@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: JavaVMMethodAreaOOM
  * @Description: asd
  * @VM_args -XX:PermSize=50M -XX:MaxPermSize=50M

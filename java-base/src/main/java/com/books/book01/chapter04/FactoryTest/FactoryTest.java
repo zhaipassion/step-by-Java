@@ -3,7 +3,7 @@ package com.books.book01.chapter04.FactoryTest;
 import java.text.NumberFormat;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: FactoryTest
  * @Description: NumberFormat类使用 factory方法产生不同风格的格式对象。
  * @chapter 4.4.4 Factory方法

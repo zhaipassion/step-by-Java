@@ -1,7 +1,7 @@
 package com.bob.baseTutorials.escapeCharactor;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: EscapeCharactor
  * @Description: java 转义符
  * @date 2014年1月16日 下午3:55:49

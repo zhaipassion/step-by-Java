@@ -7,7 +7,7 @@ package com.bob.properties.pro03_demo;
  * 文件就可以知道之前启动了多少次。
  * 范例略。。。。。
  *
- * @author Haizhu
+ * @author Bob
  */
 public class CountDemo {
 

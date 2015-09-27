@@ -1,7 +1,7 @@
 package com.books.question.StaticDemo;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: People
  * @Description: 会不会出现em1和em2取到同一个值的情况？
  * @date 2015年4月21日 下午9:52:01

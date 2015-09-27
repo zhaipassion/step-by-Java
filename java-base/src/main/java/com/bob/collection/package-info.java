@@ -21,6 +21,6 @@
  * java.util.Iterator:迭代器
  * 用于取出集合中的元素，只有三个重要的方法：hasNext(),next(),iterator()
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.collection;

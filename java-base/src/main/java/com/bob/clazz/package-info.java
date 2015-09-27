@@ -6,6 +6,6 @@
  * 2、局部内部类              —— 两种：方法中 & 作用域中（比如if的大括号中）
  * 3、匿名内部类
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.clazz;

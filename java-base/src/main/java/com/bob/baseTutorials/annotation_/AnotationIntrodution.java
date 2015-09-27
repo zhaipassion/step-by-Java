@@ -1,7 +1,7 @@
 package com.bob.baseTutorials.annotation_;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: AnotationIntrodution
  * @Description: java注释的三种方式
  * @date 2014年1月16日 下午3:51:08

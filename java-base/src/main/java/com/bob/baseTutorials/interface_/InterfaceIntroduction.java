@@ -1,7 +1,7 @@
 package com.bob.baseTutorials.interface_;
 
 /**
- * @author ZhuHongbo
+ * @author Bob
  * @ClassName: InterfaceIntroduction
  * @Description: 有时候只需要声明对象必须支持的方法，而不是必须提供哪些方法 的实现。
  * 只要他们的行为符合某种特定的准则——称为约定(contract)——方法的实现

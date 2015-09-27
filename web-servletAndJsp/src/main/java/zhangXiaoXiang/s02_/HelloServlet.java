@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: HelloServlet
  * @Description: servlet代码初探（本段注释来自《Servlet与JSP核心编程》，而不是张孝祥视频讲解）
  * @1 servlet是常规的java代码：这段代码用了新的API，但不涉及新的语法

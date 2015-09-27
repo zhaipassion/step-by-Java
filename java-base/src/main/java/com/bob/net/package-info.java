@@ -21,6 +21,6 @@
  * <p>
  * java.net.*
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.net;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName HeapOOM
  * @Description 堆内存溢出范例
  * @VM_args -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError

@@ -9,7 +9,7 @@ import java.util.Vector;
  * 获取枚举（Enumeration），而枚举和迭代是一样的，因为枚举的名称
  * 以及方法的名称过长，所以枚举被迭代器取代了。
  *
- * @author Haizhu
+ * @author Bob
  */
 public class list03_Vector {
     public static void main(String[] args) {

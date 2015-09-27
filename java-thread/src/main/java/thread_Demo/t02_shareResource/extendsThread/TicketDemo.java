@@ -6,7 +6,7 @@ import thread_Demo.t02_shareResource.extendsThread.Ticket;
  * The demo can start three thread,but cann't share the 10 tickets,
  * because every thread got 10.
  *
- * @author Haizhu
+ * @author Bob
  */
 public class TicketDemo {
     public static void main(String[] args) {

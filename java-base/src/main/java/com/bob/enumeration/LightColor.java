@@ -4,7 +4,7 @@
 package com.bob.enumeration;
 
 /**
- * @author Haizhu
+ * @author Bob
  */
 public enum LightColor {
     RED("RedLight", 1), YELLOW("YellowLight", 2), GREEN("GreenLight", 3); //Attention please, here is the ";" ,not ","

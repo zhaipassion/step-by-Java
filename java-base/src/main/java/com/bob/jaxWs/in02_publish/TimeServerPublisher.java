@@ -7,7 +7,7 @@ import com.bob.jaxWs.in01_server.TimeServerImpl;
 /**
  * 服务发布类Publisher
  *
- * @author HZ
+ * @author Bob
  */
 public class TimeServerPublisher {
     public static void main(String[] args) {

@@ -8,6 +8,6 @@
  * 网络通信就是Socket间的通信
  * 数据在两个Socket间通过IO传输
  *
- * @author Haizhu
+ * @author Bob
  */
 package com.bob.net.net02_Socket;

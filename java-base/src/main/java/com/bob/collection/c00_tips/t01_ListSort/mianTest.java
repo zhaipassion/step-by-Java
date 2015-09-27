@@ -15,7 +15,7 @@ public class mianTest {
     /**
      * @return void
      * @Description: 使用匿名内部类
-     * @author ZHB
+     * @author Bob
      * @date 2014年6月24日 下午2:39:41
      */
     private static void innerClass_method() {
@@ -51,7 +51,7 @@ public class mianTest {
     /**
      * @return void
      * @Description: 一般方法
-     * @author ZHB
+     * @author Bob
      * @date 2014年6月24日 下午2:37:55
      */
     private static void normal_method() {

@@ -5,10 +5,10 @@
  * Provide the print methods,to print the data as
  * their original style.
  *
- * @author Haizhu
+ * @author Bob
  */
 /**
- * @author Haizhu
+ * @author Bob
  *
  */
 package com.bob.io.io05_PrintInputAndOutput;

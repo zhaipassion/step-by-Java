@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * 2、当元素自身不具备比较性时，或者具备的比较性不是所需要的，这时就需要让集合自身具备比 较性，在集合初始化时，就有了比较方式。
  * 两种方式都存在时，以第二种为主。
  *
- * @author Haizhu
+ * @author Bob
  */
 public class Set022_ComparableDemo {
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Set022_ComparableDemo {
 /**
  * 将Teacher默认的按照age排序，改为按照name排序
  *
- * @author Haizhu
+ * @author Bob
  */
 class MyCompare implements Comparator<Object> {
     @Override

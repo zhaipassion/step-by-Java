@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * 区别在于，以前的remove方法如果没有值会抛出None异常，现在的
  * 方法如果没有取到值会返回null
  *
- * @author Haizhu
+ * @author Bob
  */
 public class list02_LinkedList {
     public static void main(String[] args) {

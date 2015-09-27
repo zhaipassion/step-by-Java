@@ -3,7 +3,7 @@ package com.bob.random;
 import java.util.Random;
 
 /**
- * @author Haizhu
+ * @author Bob
  * @Question how to get a long number between 100 and 1000?
  */
 public class RandomLong {

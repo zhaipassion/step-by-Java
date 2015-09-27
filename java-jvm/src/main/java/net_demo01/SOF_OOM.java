@@ -1,7 +1,7 @@
 package net_demo01;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: SOF_OOM
  * @Description: 栈溢出(StackOverflowError)，发生在方法区
  * @date 2015年2月5日 上午10:15:50

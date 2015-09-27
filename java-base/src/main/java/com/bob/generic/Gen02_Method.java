@@ -20,7 +20,7 @@ public class Gen02_Method {
  * 比如，使用集合（Collection）的时候
  *
  * @param <T>
- * @author Haizhu
+ * @author Bob
  */
 class GenericClass<T> {
     public void show(T t) {
@@ -45,7 +45,7 @@ class GenericClass<T> {
  *
  * @param <T>
  * @param <S>
- * @author Haizhu
+ * @author Bob
  */
 class GenericMethod {
     public <T> void show(T t) {

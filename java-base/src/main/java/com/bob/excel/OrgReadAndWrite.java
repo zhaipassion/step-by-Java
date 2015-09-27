@@ -153,7 +153,7 @@ public class OrgReadAndWrite {
      * @param cell
      * @return
      * @Description:
-     * @author HZ
+     * @author Bob
      * @date 2014年12月15日 下午4:14:01
      */
     public static String getCellValue(Cell cell) {

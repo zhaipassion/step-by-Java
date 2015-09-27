@@ -1,8 +1,8 @@
 /**
- * @author Haizhu
+ * @author Bob
  */
 /**
- * @author Haizhu
+ * @author Bob
  *
  */
 package com.bob.array.a02_sort;

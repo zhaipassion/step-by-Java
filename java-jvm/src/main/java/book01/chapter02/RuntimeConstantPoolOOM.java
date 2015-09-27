@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: RuntimeConstantPoolOOM
  * @Description: 运行时常量池导致的内存溢出异常(这是方法去溢出的一种情况)
  * @VM_args -XX:PermSize=10M -XX:MaxPermSize=10M

@@ -1,7 +1,7 @@
 package com.books.book01.chapter03.Message;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: Message
  * @Description: 命令行参数：运行的时候输入参数，传给main函数
  * @date 2015年2月15日 上午12:43:21

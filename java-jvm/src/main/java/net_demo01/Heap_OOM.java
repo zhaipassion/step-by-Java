@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author HZ
+ * @author Bob
  * @ClassName: OOMH_OOM
  * @Description:
  * @VM_args -verbose:gc -Xmn10M -Xms20M -Xmx20M -XX:+PrintGC

@@ -1,10 +1,10 @@
 /**
  * Stream doesn't need to flush,but must to close.
  *
- * @author Haizhu
+ * @author Bob
  */
 /**
- * @author Haizhu
+ * @author Bob
  *
  */
 package com.bob.io.io03_InputAndOutput;

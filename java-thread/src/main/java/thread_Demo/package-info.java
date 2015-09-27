@@ -2,6 +2,6 @@
  * The test or demos of thread
  * from BiXiangdong movie
  *
- * @author Haizhu
+ * @author Bob
  */
 package thread_Demo;

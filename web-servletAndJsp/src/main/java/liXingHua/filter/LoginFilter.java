@@ -14,7 +14,7 @@ import javax.servlet.ServletResponse;
 /**
  * 登陆验证过滤器，记得在web.xml中也要配置
  *
- * @author HZ
+ * @author Bob
  */
 public class LoginFilter implements Filter {
 

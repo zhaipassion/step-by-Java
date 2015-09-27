@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.ListIterator;
 
 /**
- * @author ZHB
+ * @author Bob
  * @ClassName: Ite01_normal
  * @Description: <link>http://examples.javacodegeeks.com/core-java/util/java-iterator-and-listiterator-example/</link>
  * @date 2014年6月23日 上午10:49:37

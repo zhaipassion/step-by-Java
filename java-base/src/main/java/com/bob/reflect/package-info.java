@@ -2,7 +2,7 @@
  * @Package com.haizhu.reflect_Demo
  * @ClassName: package-info
  * @Description:
- * @author ZhuHongbo
+ * @author Bob
  * @date 2014年1月6日 下午11:30:16
  * <p>
  * 《杜聚宾》

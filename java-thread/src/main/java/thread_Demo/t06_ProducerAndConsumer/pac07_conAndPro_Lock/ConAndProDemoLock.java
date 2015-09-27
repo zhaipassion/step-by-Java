@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * use the lcok(ReentantLock) instead of synchronized
  *
- * @author Haizhu
+ * @author Bob
  */
 public class ConAndProDemoLock {
     public static void main(String[] args) {
