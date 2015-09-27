@@ -1,16 +1,13 @@
-package com.bob.annotation.main;
+package com.bob.annotation;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import com.bob.annotation.annotation.SayHiAnnotation;
-import com.bob.annotation.element.SayHiEmlement;
-
-public class AnnotionOperator {
+public class Test {
     public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException,
             InvocationTargetException, ClassNotFoundException {
-        SayHiEmlement element = new SayHiEmlement(); // 初始化一个实例，用于方法调用
-        Method[] methods = SayHiEmlement.class.getDeclaredMethods(); // 获得所有方法
+        ToUse element = new ToUse(); // 初始化一个实例，用于方法调用
+        Method[] methods = ToUse.class.getDeclaredMethods(); // 获得所有方法
 
         for (Method method : methods) {
             SayHiAnnotation annotationTmp = null;

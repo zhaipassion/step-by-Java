@@ -1,4 +1,4 @@
-package com.bob.annotation.annotation;
+package com.bob.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
