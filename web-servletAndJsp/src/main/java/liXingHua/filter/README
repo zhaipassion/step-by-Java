@@ -1,0 +1,36 @@
+过滤器的基本概念：
+Filter是在Servlet2.3之后增加的新功能，当需要限制用户访问某系资源或者
+在处理请求时提前处理某些资源的时候，就可以使用过滤器完成。
+过滤器是以一种组件的形式绑定到WEB应用程序中的，与其他的WEB应用程序组件
+不同的是，过滤器采用了“链”的方式进行处理。
+客户端 -->过滤器-->过滤器-->……-->过滤器-->过滤器-->WEB资源
+如上面所示，过滤器可以定义很多个，每个过滤器之间进行链接
+
+2、配置
+一般的servlet程序，需要手动触发，比如URL地址访问。
+但是filter是自动触发的，只要访问WEB资源就会自动调用filter进行过滤。
+<filter>
+    <filter-name>simple</filter-name>
+    <filter-class>liXingHua.filter.FilterDemo</filter-class>
+    <init-param>
+        <param-name>ref</param-name>
+        <param-value>Hello Bob!</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>simple</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+3、生命周期
+和servlet的声明周期相似
+
+
+4、使用场景
+编码验证
+登陆验证
+
+
+
+
+

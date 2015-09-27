@@ -1,8 +1,0 @@
-关联的jar包有多个，但是使用maven进行关联的时候，只要加入
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.5-FINAL</version>
-		</dependency>
-别的关联包会自动加载。
-
