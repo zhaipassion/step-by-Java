@@ -3,6 +3,5 @@
   <groupId>com.bob</groupId>
   <artifactId>java-thread</artifactId>
   <version>0.1-SNAPSHOT</version>
-  <name>thread</name>
   <description>thread demo</description>
 </project>
