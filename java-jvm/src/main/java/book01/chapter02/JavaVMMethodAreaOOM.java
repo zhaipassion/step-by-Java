@@ -7,36 +7,36 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
 /**
+ * @author HZ
  * @ClassName: JavaVMMethodAreaOOM
  * @Description: asd
  * @VM_args -XX:PermSize=50M -XX:MaxPermSize=50M
  * @-XX:PermSize=10M 方法区最小内存
  * @-XX:MaxPermSize=10M 方法区最大内存
- * @author HZ
  * @date 2015年2月3日 下午11:46:53
  */
 public class JavaVMMethodAreaOOM {
-	public static void main(String[] args) {
-		while (true) {
-			Enhancer enhancer = new Enhancer();
-			enhancer.setSuperclass(OOMObject.class);
-			enhancer.setUseCache(false);
-			enhancer.setCallback(new MethodInterceptor() {
-				public Object intercept(Object obj, Method method,
-						Object[] args, MethodProxy proxy) throws Throwable {
-					return proxy.invokeSuper(obj, args);
-				}
-			});
-			enhancer.create();
-		}
-	}
+    public static void main(String[] args) {
+        while (true) {
+            Enhancer enhancer = new Enhancer();
+            enhancer.setSuperclass(OOMObject.class);
+            enhancer.setUseCache(false);
+            enhancer.setCallback(new MethodInterceptor() {
+                public Object intercept(Object obj, Method method,
+                                        Object[] args, MethodProxy proxy) throws Throwable {
+                    return proxy.invokeSuper(obj, args);
+                }
+            });
+            enhancer.create();
+        }
+    }
 
-	static class OOMObject {
-	}
+    static class OOMObject {
+    }
 }
 
 /**
- *  运行结果：
+ * 运行结果：
  */
 
 // 第一次结果：

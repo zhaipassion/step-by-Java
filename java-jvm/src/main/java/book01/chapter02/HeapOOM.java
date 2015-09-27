@@ -4,25 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author HZ
  * @ClassName HeapOOM
- * @Description 堆内存溢出范例 
- * @VM_args 
- * -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError
+ * @Description 堆内存溢出范例
+ * @VM_args -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError
  * @-Xms20m 最小堆内存
  * @-Xmx20m 最大对内存
  * @-XX +HeapDumpOnOutOfMemoryError 拍快照？
- * @author HZ 
  * @date 2015年2月3日 下午9:04:31
  */
 public class HeapOOM {
-	static class OOMObject{
-	}
-	public static void main(String[] args) {
-		List<OOMObject> list = new ArrayList<OOMObject>();
-		while(true){
-			list.add(new OOMObject());
-		}
-	}
+    static class OOMObject {
+    }
+
+    public static void main(String[] args) {
+        List<OOMObject> list = new ArrayList<OOMObject>();
+        while (true) {
+            list.add(new OOMObject());
+        }
+    }
 }
 
 // This demo result is:

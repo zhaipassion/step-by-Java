@@ -1,56 +1,64 @@
-body{
-	color: red;
-	background-color: lime;
+body {
+    color: red;
+    background-color: lime;
 }
-h1{
-	text-decoration: none;
-	font-size: 150%;
+
+h1 {
+    text-decoration: none;
+    font-size: 150%;
 }
-.imagec{
-	width: 400px;
-	height: 400px;
-	display: block;
-	/*水平居中显示，左右auto就行了*/
-	margin-left: auto;
-	margin-right: auto;
+
+.imagec {
+    width: 400px;
+    height: 400px;
+    display: block;
+    /*水平居中显示，左右auto就行了*/
+    margin-left: auto;
+    margin-right: auto;
 }
-h2{
-	text-decoration: none;
-	font-size: 1.2em;
+
+h2 {
+    text-decoration: none;
+    font-size: 1.2em;
 }
-p.para1{
-	color: blue;
-	font-family: Helvetica;
+
+p.para1 {
+    color: blue;
+    font-family: Helvetica;
 }
-p.para2{
-	color: green;
+
+p.para2 {
+    color: green;
 }
-p.para3{
-	color: purple;
-	font-style: italic;
+
+p.para3 {
+    color: purple;
+    font-style: italic;
 }
-p.para4{
-	line-height: 1.5em;
-	background-color: yellow;
-	padding: 20px;
-	/*
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	这三行等效于
-	*/
-	border:black 2px solid;
+
+p.para4 {
+    line-height: 1.5em;
+    background-color: yellow;
+    padding: 20px;
+    /*
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    这三行等效于
+    */
+    border: black 2px solid;
 
 }
-p.para5{
-	line-height: 1.5em;
-	background-color: yellow;
-	/*padding: 20px; 相当于padding: 20px 20px 20px 20px; */
-	padding: 20px;
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	margin: 20px;
-	margin-top: 50px;
-	margin-left: 400px;
+
+p.para5 {
+    line-height: 1.5em;
+    background-color: yellow;
+    /*padding: 20px; 相当于padding: 20px 20px 20px 20px; */
+    padding: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 400px;
 }

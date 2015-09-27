@@ -6,8 +6,8 @@ package com.bob.properties.pro03_demo;
  * 解决这个问题，就可以使用properties文件进行记录，程序启动的时候读取这个
  * 文件就可以知道之前启动了多少次。
  * 范例略。。。。。
- * @author Haizhu
  *
+ * @author Haizhu
  */
 public class CountDemo {
 

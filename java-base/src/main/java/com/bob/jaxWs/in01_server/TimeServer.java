@@ -7,15 +7,15 @@ import javax.jws.soap.SOAPBinding.Style;
 
 /**
  * 服务接口类SEI
- * 
+ *
  * @author HZ
  */
 @WebService
 @SOAPBinding(style = Style.RPC)
 public interface TimeServer {
-	@WebMethod
-	String getTimeAsString();
+    @WebMethod
+    String getTimeAsString();
 
-	@WebMethod
-	long getTimeAsElapsed();
+    @WebMethod
+    long getTimeAsElapsed();
 }

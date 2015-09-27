@@ -1,109 +1,135 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>当前网站域名生成二维码</title>
-   <script src="jquery-1.7.2.js" type="text/javascript"></script>  
-   <script src="jquery.qrcode.js" type="text/javascript"></script>
-   <script src="qrcode.js" type="text/javascript"></script>  
-   <style type="text/css">
-    body{ margin:0; padding:0; background:#FFFFFF; text-align:center}
-   	#output{ width:200px; height:200px; margin:0 auto; margin-top:10em; }
-	#down{width:200px; height:200px; margin:0 auto; margin-top:20px; text-align:center}
-	#down a{ color:#000; text-decoration:none}
-	#down a:hover{ color:#f00; text-decoration:underline}
-   </style>
-</head>  
-<body >  
-	<div id="output" ></div>
-    <script type="text/javascript">  
-        function utf16to8(str) {  
-            var out, i, len, c;  
-            out = "";  
-            len = str.length;  
-            for (i = 0; i < len; i++) {  
-                c = str.charCodeAt(i);  
-                if ((c >= 0x0001) && (c <= 0x007F)) {  
-                    out += str.charAt(i);  
-                } else if (c > 0x07FF) {  
-                    out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));  
-                    out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));  
-                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));  
-                } else {  
-                    out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));  
-                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));  
-                }  
-            }  
-            return out;  
-        }  
-		 
-	 //主域名含端口
-	 //var host = window.location.host;
-	 //主域名不含端口
-	 //var host2=document.domain;
-	 //主域名获取页面完整地址
-	 //var url = window.location.href;
-		 
-		//host是要生成的内容，可替换
-		//host="";
-	 var host = "http://"+window.location.host; 
-		
-		
- 
-		//alert (host);
-		content = utf16to8(host);
-		
-		//生成canvas
-	   function doconvas(){
-		 jQuery("#output").qrcode({
-			render:(jQuery.browser.msie && jQuery.browser.version < 9 ? "table" : "canvas"),
-			width:200,
-			height:200,			  
-			background:"#ffffff", //背景颜色
-			foreground:"#000000", //前景色
-			text:content,		 //内容
-			typeNumber  :-1     //计算模式 
-		 });
-       } 
-	 
-	 
-		//add logo
-		function drawLogo(logoImgsrc){ 
-			doconvas();
-			var Canvas = $('canvas')[0];
-			var CRC = Canvas.getContext('2d');
-			var img = new Image();
-			img.onload = function(){
-				draw(this);
-				showPic();
-			};
-			img.src = logoImgsrc;
-			function draw(obj){
-			  CRC.drawImage(obj,50,50);
-			}
-		}
-	
-		//canvas to qrcodeimg
-		function showPic(){
-			if(jQuery.browser.msie && jQuery.browser.version < 9){
-				document.write("<br /><br /><div style='width:200px; line-height:20px; font-size:0.8em; text-indent:1.6em; text-align:left; margin:0 auto;'>尊敬的用户，由于您的浏览器版本太老，只能查看二维码，无法另存为图片 ，请升级浏览器版本。360、搜狗用户请切换为高速模式查看，或者换为<a style='color:#f00;' href='http://www.baidu.com/s?wd=chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%98%E6%96%B9%E4%B8%8B%E8%BD%BD&ie=utf-8&f=8&rsv_bp=1&tn=baidu&bs=chrome%E6%B5%8F%E8%A7%88%E5%99%A8'>chrome浏览器</a>查看，谢谢您的支持！<div>")
-		    }else{
-				$("#output").hide();
-				var dataUrl = $('canvas')[0].toDataURL('image/png');
-				var newImg = '';
-				newImg += '<img src="' + dataUrl + '" alt="二维码" id="qrcode" title="qrcode">';
-				//newImg += '<br /><br /><div id="down"><a href=javascript:DownLoad("'+dataUrl+'")>下载</a></div>';
-				$('body').append(newImg);
-				$("#qrcode").css({"width":"200px","height":"200px","margin":"0 auto","margin-top":"10em"})
-			}
-		}
-	   //直接显示
-	   doconvas();
-	   showPic();
-	   
-	   //加上logo并显示，图片在当前目录下
-	   //var logoImgsrc ='./logo.png';
-	   // drawLogo(logoImgsrc);
-    </script>  
-</body>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>当前网站域名生成二维码</title>
+    <script src="jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="jquery.qrcode.js" type="text/javascript"></script>
+    <script src="qrcode.js" type="text/javascript"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background: #FFFFFF;
+            text-align: center
+        }
+
+        #output {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 10em;
+        }
+
+        #down {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center
+        }
+
+        #down a {
+            color: #000;
+            text-decoration: none
+        }
+
+        #down a:hover {
+            color: #f00;
+            text-decoration: underline
+        }
+    </style>
+</head>
+<body>
+<div id="output"></div>
+<script type="text/javascript">
+    function utf16to8(str) {
+        var out, i, len, c;
+        out = "";
+        len = str.length;
+        for (i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            }
+        }
+        return out;
+    }
+
+    //主域名含端口
+    //var host = window.location.host;
+    //主域名不含端口
+    //var host2=document.domain;
+    //主域名获取页面完整地址
+    //var url = window.location.href;
+
+    //host是要生成的内容，可替换
+    //host="";
+    var host = "http://" + window.location.host;
+
+
+    //alert (host);
+    content = utf16to8(host);
+
+    //生成canvas
+    function doconvas() {
+        jQuery("#output").qrcode({
+            render: (jQuery.browser.msie && jQuery.browser.version < 9 ? "table" : "canvas"),
+            width: 200,
+            height: 200,
+            background: "#ffffff", //背景颜色
+            foreground: "#000000", //前景色
+            text: content,		 //内容
+            typeNumber: -1     //计算模式
+        });
+    }
+
+
+    //add logo
+    function drawLogo(logoImgsrc) {
+        doconvas();
+        var Canvas = $('canvas')[0];
+        var CRC = Canvas.getContext('2d');
+        var img = new Image();
+        img.onload = function () {
+            draw(this);
+            showPic();
+        };
+        img.src = logoImgsrc;
+        function draw(obj) {
+            CRC.drawImage(obj, 50, 50);
+        }
+    }
+
+    //canvas to qrcodeimg
+    function showPic() {
+        if (jQuery.browser.msie && jQuery.browser.version < 9) {
+            document.write("<br /><br /><div style='width:200px; line-height:20px; font-size:0.8em; text-indent:1.6em; text-align:left; margin:0 auto;'>尊敬的用户，由于您的浏览器版本太老，只能查看二维码，无法另存为图片 ，请升级浏览器版本。360、搜狗用户请切换为高速模式查看，或者换为<a style='color:#f00;' href='http://www.baidu.com/s?wd=chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%98%E6%96%B9%E4%B8%8B%E8%BD%BD&ie=utf-8&f=8&rsv_bp=1&tn=baidu&bs=chrome%E6%B5%8F%E8%A7%88%E5%99%A8'>chrome浏览器</a>查看，谢谢您的支持！<div>")
+        } else {
+            $("#output").hide();
+            var dataUrl = $('canvas')[0].toDataURL('image/png');
+            var newImg = '';
+            newImg += '<img src="' + dataUrl + '" alt="二维码" id="qrcode" title="qrcode">';
+            //newImg += '<br /><br /><div id="down"><a href=javascript:DownLoad("'+dataUrl+'")>下载</a></div>';
+            $('body').append(newImg);
+            $("#qrcode").css({"width": "200px", "height": "200px", "margin": "0 auto", "margin-top": "10em"})
+        }
+    }
+    //直接显示
+    doconvas();
+    showPic();
+
+    //加上logo并显示，图片在当前目录下
+    //var logoImgsrc ='./logo.png';
+    // drawLogo(logoImgsrc);
+</script>
+</body>
 </html>  

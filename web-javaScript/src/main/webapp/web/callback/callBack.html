@@ -1,33 +1,35 @@
 <!doctype html>
 <html>
 <body>
-	<!-- 认识回掉函数 -->
-	<script type="text/javascript">
-		/*被回掉的函数*/
-		function toCallBack() {
-			alert("I'm a function to callback.");
-		}
-		/*调用回掉函数的函数*/
-		function callbackTest(name, callback) {/*所有的参数都不带括号*/
-			alert("I'm " + name + ", I'm executing a callbackTest.");
-			callback();/*虽然传递的参数不带括号，但是这里要带上括号，表示执行函数*/
-		}
-		/*执行调用的函数*/
-		callbackTest("Bob", toCallBack);/*回掉函数不能带上参数，不然会立即执行*/
-	</script>
-	
-	<!-- 带参数的回掉函数：使用匿名函数来实现 -->
-	<script type="text/javascript">
-		function toCallBack(param) {
-			alert("I'm a function to callback.And I got a param -> " + param);
-		}
-		function callbackTest(name, callback) {
-			alert("I'm " + name + ", I'm executing a callbackTest.");
-			callback();
-		}
-		callbackTest("Bob", function() {
-			toCallBack("Awesome")
-		});
-	</script>
+<!-- 认识回掉函数 -->
+<script type="text/javascript">
+    /*被回掉的函数*/
+    function toCallBack() {
+        alert("I'm a function to callback.");
+    }
+    /*调用回掉函数的函数*/
+    function callbackTest(name, callback) {/*所有的参数都不带括号*/
+        alert("I'm " + name + ", I'm executing a callbackTest.");
+        callback();
+        /*虽然传递的参数不带括号，但是这里要带上括号，表示执行函数*/
+    }
+    /*执行调用的函数*/
+    callbackTest("Bob", toCallBack);
+    /*回掉函数不能带上参数，不然会立即执行*/
+</script>
+
+<!-- 带参数的回掉函数：使用匿名函数来实现 -->
+<script type="text/javascript">
+    function toCallBack(param) {
+        alert("I'm a function to callback.And I got a param -> " + param);
+    }
+    function callbackTest(name, callback) {
+        alert("I'm " + name + ", I'm executing a callbackTest.");
+        callback();
+    }
+    callbackTest("Bob", function () {
+        toCallBack("Awesome")
+    });
+</script>
 </body>
 </html>

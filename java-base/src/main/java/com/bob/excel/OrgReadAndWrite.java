@@ -28,7 +28,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  * 将<url>http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/</url>的行政区域数据，导入到数据库相关表中
  * 1、先将数据拷贝到excel文件中
  * 2、将文件中的数据写入数据库
- * 
+ *
  * @author Bob
  * @created 2015年8月27日 上午11:31:25
  */
@@ -150,44 +150,44 @@ public class OrgReadAndWrite {
     }
 
     /**
-     * @Description:
      * @param cell
      * @return
+     * @Description:
      * @author HZ
      * @date 2014年12月15日 下午4:14:01
      */
     public static String getCellValue(Cell cell) {
         String ret;
         switch (cell.getCellType()) {
-        case HSSFCell.CELL_TYPE_BLANK:
-            ret = "";
-            break;
-        case HSSFCell.CELL_TYPE_BOOLEAN:
-            ret = String.valueOf(cell.getBooleanCellValue());
-            break;
-        case HSSFCell.CELL_TYPE_ERROR:
-            ret = null;
-            break;
-        case HSSFCell.CELL_TYPE_FORMULA:
-            Workbook wb = cell.getSheet().getWorkbook();
-            CreationHelper crateHelper = wb.getCreationHelper();
-            FormulaEvaluator evaluator = crateHelper.createFormulaEvaluator();
-            ret = getCellValue(evaluator.evaluateInCell(cell));
-            break;
-        case HSSFCell.CELL_TYPE_NUMERIC:
-            if (DateUtil.isCellDateFormatted(cell)) {
-                DateFormat simpleDateFormat = new SimpleDateFormat("");
-                Date theDate = cell.getDateCellValue();
-                ret = simpleDateFormat.format(theDate);
-            } else {
-                ret = NumberToTextConverter.toText(cell.getNumericCellValue());
-            }
-            break;
-        case HSSFCell.CELL_TYPE_STRING:
-            ret = cell.getRichStringCellValue().getString();
-            break;
-        default:
-            ret = null;
+            case HSSFCell.CELL_TYPE_BLANK:
+                ret = "";
+                break;
+            case HSSFCell.CELL_TYPE_BOOLEAN:
+                ret = String.valueOf(cell.getBooleanCellValue());
+                break;
+            case HSSFCell.CELL_TYPE_ERROR:
+                ret = null;
+                break;
+            case HSSFCell.CELL_TYPE_FORMULA:
+                Workbook wb = cell.getSheet().getWorkbook();
+                CreationHelper crateHelper = wb.getCreationHelper();
+                FormulaEvaluator evaluator = crateHelper.createFormulaEvaluator();
+                ret = getCellValue(evaluator.evaluateInCell(cell));
+                break;
+            case HSSFCell.CELL_TYPE_NUMERIC:
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    DateFormat simpleDateFormat = new SimpleDateFormat("");
+                    Date theDate = cell.getDateCellValue();
+                    ret = simpleDateFormat.format(theDate);
+                } else {
+                    ret = NumberToTextConverter.toText(cell.getNumericCellValue());
+                }
+                break;
+            case HSSFCell.CELL_TYPE_STRING:
+                ret = cell.getRichStringCellValue().getString();
+                break;
+            default:
+                ret = null;
         }
         return ret.trim();
     }
@@ -208,7 +208,7 @@ public class OrgReadAndWrite {
     static Connection con = null; // 表示数据库的连接对象
     static PreparedStatement pstmt = null; // 表示数据库更新操作
     static String sql = "INSERT INTO nmall.organization" + "(id,parent_id,code,name,full_name,create_time,create_user)"
-        + "VALUES(?,?,?,?,?,?,?)";
+            + "VALUES(?,?,?,?,?,?,?)";
 
     public static void getCon() {
         try {

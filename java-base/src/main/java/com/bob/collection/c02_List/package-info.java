@@ -11,8 +11,7 @@
  * listIterator()
  * 改：
  * set(index,element)
- * 
- * @author Haizhu
  *
+ * @author Haizhu
  */
 package com.bob.collection.c02_List;

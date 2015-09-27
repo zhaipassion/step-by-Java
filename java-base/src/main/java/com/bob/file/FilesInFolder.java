@@ -5,46 +5,46 @@ import java.io.IOException;
 import java.io.File;
 
 public class FilesInFolder {
-        /**
-         * 读取某个文件夹下的所有文件
-         */
-        public static boolean readfile(String filepath) throws FileNotFoundException, IOException {
-                try {
+    /**
+     * 读取某个文件夹下的所有文件
+     */
+    public static boolean readfile(String filepath) throws FileNotFoundException, IOException {
+        try {
 
-                        File file = new File(filepath);
-                        if (!file.isDirectory()) {
-                                System.out.println("文件");
-                                System.out.println("path=" + file.getPath());
-                                System.out.println("absolutepath=" + file.getAbsolutePath());
-                                System.out.println("name=" + file.getName());
+            File file = new File(filepath);
+            if (!file.isDirectory()) {
+                System.out.println("文件");
+                System.out.println("path=" + file.getPath());
+                System.out.println("absolutepath=" + file.getAbsolutePath());
+                System.out.println("name=" + file.getName());
 
-                        } else if (file.isDirectory()) {
-                                System.out.println("文件夹");
-                                String[] filelist = file.list();
-                                for (int i = 0; i < filelist.length; i++) {
-                                        File readfile = new File(filepath + File.separator + filelist[i]);
-                                        if (!readfile.isDirectory()) {
-                                                System.out.println("path=" + readfile.getPath());
-                                                System.out.println("absolutepath="
-                                                                + readfile.getAbsolutePath());
-                                                System.out.println("name=" + readfile.getName());
+            } else if (file.isDirectory()) {
+                System.out.println("文件夹");
+                String[] filelist = file.list();
+                for (int i = 0; i < filelist.length; i++) {
+                    File readfile = new File(filepath + File.separator + filelist[i]);
+                    if (!readfile.isDirectory()) {
+                        System.out.println("path=" + readfile.getPath());
+                        System.out.println("absolutepath="
+                                + readfile.getAbsolutePath());
+                        System.out.println("name=" + readfile.getName());
 
-                                        } else if (readfile.isDirectory()) {
-                                                readfile(filepath + File.separator + filelist[i]);
-                                        }
-                                }
-
-                        }
-
-                } catch (FileNotFoundException e) {
-                        System.out.println("readfile()   Exception:" + e.getMessage());
+                    } else if (readfile.isDirectory()) {
+                        readfile(filepath + File.separator + filelist[i]);
+                    }
                 }
-                return true;
-        }
 
-        /**
-         * 删除某个文件夹下的所有文件夹和文件
-         */
+            }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("readfile()   Exception:" + e.getMessage());
+        }
+        return true;
+    }
+
+    /**
+     * 删除某个文件夹下的所有文件夹和文件
+     */
         
         
         /*public static boolean deletefile(String delpath)
@@ -80,16 +80,15 @@ public class FilesInFolder {
                 }
                 return true;
         }*/
-        
-        public static void main(String[] args) {
-                try {
-                        readfile("d:/file");
-                        // deletefile("D:/file");
-                } catch (FileNotFoundException ex) {
-                } catch (IOException ex) {
-                }
-                System.out.println("ok");
-                System.out.println(File.separator);
+    public static void main(String[] args) {
+        try {
+            readfile("d:/file");
+            // deletefile("D:/file");
+        } catch (FileNotFoundException ex) {
+        } catch (IOException ex) {
         }
+        System.out.println("ok");
+        System.out.println(File.separator);
+    }
 
 }

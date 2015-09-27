@@ -13,9 +13,8 @@ import javax.servlet.ServletResponse;
 
 /**
  * 登陆验证过滤器，记得在web.xml中也要配置
- * 
+ *
  * @author HZ
- * 
  */
 public class LoginFilter implements Filter {
 
@@ -26,7 +25,7 @@ public class LoginFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-        ServletException {
+            ServletException {
         System.out.println("执行登录验证方法之前");
         // HttpServletRequest req = (HttpServletRequest) request;
         // HttpSession session = req.getSession();

@@ -9,55 +9,55 @@ import book01.chapter04.ServletUtilities;
  */
 
 public class InsuranceInfo {
-	private String name = "No name specified";
-	private String employeeID = "No ID specified";
-	private int numChildren = 0;
-	private boolean isMarried = false;
+    private String name = "No name specified";
+    private String employeeID = "No ID specified";
+    private int numChildren = 0;
+    private boolean isMarried = false;
 
-	public String getName() {
-		return (name);
-	}
+    public String getName() {
+        return (name);
+    }
 
-	/**
-	 * Just in case user enters special HTML characters, filter them out before
-	 * storing the name.
-	 */
+    /**
+     * Just in case user enters special HTML characters, filter them out before
+     * storing the name.
+     */
 
-	public void setName(String name) {
-		this.name = ServletUtilities.filter(name);
-	}
+    public void setName(String name) {
+        this.name = ServletUtilities.filter(name);
+    }
 
-	public String getEmployeeID() {
-		return (employeeID);
-	}
+    public String getEmployeeID() {
+        return (employeeID);
+    }
 
-	/**
-	 * Just in case user enters special HTML characters, filter them out before
-	 * storing the name.
-	 */
+    /**
+     * Just in case user enters special HTML characters, filter them out before
+     * storing the name.
+     */
 
-	public void setEmployeeID(String employeeID) {
-		this.employeeID = ServletUtilities.filter(employeeID);
-	}
+    public void setEmployeeID(String employeeID) {
+        this.employeeID = ServletUtilities.filter(employeeID);
+    }
 
-	public int getNumChildren() {
-		return (numChildren);
-	}
+    public int getNumChildren() {
+        return (numChildren);
+    }
 
-	public void setNumChildren(int numChildren) {
-		this.numChildren = numChildren;
-	}
+    public void setNumChildren(int numChildren) {
+        this.numChildren = numChildren;
+    }
 
-	/**
-	 * Bean convention: name getter method "isXxx" instead of "getXxx" for
-	 * boolean methods.
-	 */
+    /**
+     * Bean convention: name getter method "isXxx" instead of "getXxx" for
+     * boolean methods.
+     */
 
-	public boolean isMarried() {
-		return (isMarried);
-	}
+    public boolean isMarried() {
+        return (isMarried);
+    }
 
-	public void setMarried(boolean isMarried) {
-		this.isMarried = isMarried;
-	}
+    public void setMarried(boolean isMarried) {
+        this.isMarried = isMarried;
+    }
 }

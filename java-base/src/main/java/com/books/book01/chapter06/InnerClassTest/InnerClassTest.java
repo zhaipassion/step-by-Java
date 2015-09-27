@@ -8,46 +8,46 @@ import javax.swing.Timer;
 
 /**
  * 【6.4.1】【内部类】this program demonstrates the use of inner classes.
- * 
- * @version 1.10 2004-02-27
+ *
  * @author Cay Horstmann
+ * @version 1.10 2004-02-27
  */
 public class InnerClassTest {
-	public static void main(String[] args) {
-		TalkingClock clock = new TalkingClock(1000, true);
-		clock.start();
+    public static void main(String[] args) {
+        TalkingClock clock = new TalkingClock(1000, true);
+        clock.start();
 
-		// keep program running until user selects "Ok"
-		JOptionPane.showMessageDialog(null, "Quit program?");
-		System.exit(0);
-	}
+        // keep program running until user selects "Ok"
+        JOptionPane.showMessageDialog(null, "Quit program?");
+        System.exit(0);
+    }
 }
 
 class TalkingClock {
-	private int interval;
-	private boolean beep;
+    private int interval;
+    private boolean beep;
 
-	public TalkingClock(int interval, boolean beep) {
-		this.interval = interval;
-		this.beep = beep;
-	}
+    public TalkingClock(int interval, boolean beep) {
+        this.interval = interval;
+        this.beep = beep;
+    }
 
-	public void start() {
-		ActionListener listener = new TimePrinter();
-		Timer t = new Timer(interval, listener);
-		t.start();
-	}
+    public void start() {
+        ActionListener listener = new TimePrinter();
+        Timer t = new Timer(interval, listener);
+        t.start();
+    }
 
-	// HZ：内部类
-	public class TimePrinter implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
-			Date now = new Date();
-			System.out.println("At the tone, the time is " + now);
-			// HZ：内部类可以直接访问外围类的实例域--beep
-			if (beep)
-				Toolkit.getDefaultToolkit().beep();
-		}
-	}
+    // HZ：内部类
+    public class TimePrinter implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            Date now = new Date();
+            System.out.println("At the tone, the time is " + now);
+            // HZ：内部类可以直接访问外围类的实例域--beep
+            if (beep)
+                Toolkit.getDefaultToolkit().beep();
+        }
+    }
 }
 
 /**
@@ -65,12 +65,12 @@ class TalkingClock {
  * c、当start方法中创建了TimePrinter 对象后，编译器就会将this引用(this代表TalkingClock)传递给当前的语音时钟的构造器：
  * ActionListener listener = new TimePrinter(this);
  * [注意]：outer不是java的关键字，我们只是用它来说明一下内部类中的机制。
- * 
+ * <p>
  * 6.4.2 内部类的特殊语法规则
  * a、一般内部类可以直接使用外围类的对象，比如
  * if(beep)  Toolkit.getDefaultToolkit().beep();
- * 事实上，使用外围类引用的正规语法还要复杂一些。表达式  
- * OuterClass.this 
+ * 事实上，使用外围类引用的正规语法还要复杂一些。表达式
+ * OuterClass.this
  * 表示外围类引用。可以上面的代码等效于
  * if(TalkingClock.this.beep)  Toolkit.getDefaultToolkit().beep();
  * b、反过来，可以采用下列语法格式更加明确地编写内部对象的构造器：
@@ -104,6 +104,5 @@ class TalkingClock {
  * 成员内部类你可以当成一个方法来看，四种访问修饰符 public、private、protected、default都可以用
  * 局部内部类不能使用public或者private访问说明符进行声明。它的作用域被限定在声明这个局部类的块中。
  * 【】
- * 
  */
 

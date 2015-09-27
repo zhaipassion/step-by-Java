@@ -21,6 +21,7 @@ public class ViewsController {
 
     /**
      * 问题：此action并没有指定返回页面，是默认同名文件吗？
+     *
      * @param model
      */
     @RequestMapping(value = "/viewName", method = RequestMethod.GET)

@@ -19,8 +19,8 @@ public class SimpleXMLParseDemo {
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(path + File.separator + "src" + File.separator + "main" + File.separator
-                + "java" + File.separator + "com" + File.separator + "liXingHua" + File.separator + "simpleDemo"
-                + File.separator + "xmlParseDemo.xml");
+                    + "java" + File.separator + "com" + File.separator + "liXingHua" + File.separator + "simpleDemo"
+                    + File.separator + "xmlParseDemo.xml");
             NodeList nl = doc.getElementsByTagName("name");
             System.out.println("姓名：" + nl.item(0).getFirstChild().getNodeValue());
         } catch (ParserConfigurationException e) {

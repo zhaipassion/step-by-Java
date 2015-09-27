@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-	@ExceptionHandler
-	public @ResponseBody String handleBusinessException(BusinessException ex) {
-		return "Handled BusinessException";
-	}
+    @ExceptionHandler
+    public
+    @ResponseBody
+    String handleBusinessException(BusinessException ex) {
+        return "Handled BusinessException";
+    }
 
 }

@@ -5,40 +5,40 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class JavaBean {
-	
-	@NotNull
-	private String foo;
 
-	@NotNull
-	private String fruit;
+    @NotNull
+    private String foo;
 
-	public JavaBean() {
-	}
+    @NotNull
+    private String fruit;
 
-	public JavaBean(String foo, String fruit) {
-		this.foo = foo;
-		this.fruit = fruit;
-	}
+    public JavaBean() {
+    }
 
-	public String getFoo() {
-		return foo;
-	}
+    public JavaBean(String foo, String fruit) {
+        this.foo = foo;
+        this.fruit = fruit;
+    }
 
-	public void setFoo(String foo) {
-		this.foo = foo;
-	}
+    public String getFoo() {
+        return foo;
+    }
 
-	public String getFruit() {
-		return fruit;
-	}
+    public void setFoo(String foo) {
+        this.foo = foo;
+    }
 
-	public void setFruit(String fruit) {
-		this.fruit = fruit;
-	}
-	
-	@Override
-	public String toString() {
-		return "JavaBean {foo=[" + foo + "], fruit=[" + fruit + "]}";
-	}
+    public String getFruit() {
+        return fruit;
+    }
+
+    public void setFruit(String fruit) {
+        this.fruit = fruit;
+    }
+
+    @Override
+    public String toString() {
+        return "JavaBean {foo=[" + foo + "], fruit=[" + fruit + "]}";
+    }
 
 }

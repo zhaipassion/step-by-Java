@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @ClassName: OOMH_OOM 
- * @Description: 
+ * @author HZ
+ * @ClassName: OOMH_OOM
+ * @Description:
  * @VM_args -verbose:gc -Xmn10M -Xms20M -Xmx20M -XX:+PrintGC
  * @
- * @author HZ 
  * @date 2015年2月5日 上午10:24:01
  */
 public class Heap_OOM {
 
-	public static void main(String... args) {
-		List<byte[]> buffer = new ArrayList<byte[]>();
-		buffer.add(new byte[10 * 1024 * 1024]);
-	}
+    public static void main(String... args) {
+        List<byte[]> buffer = new ArrayList<byte[]>();
+        buffer.add(new byte[10 * 1024 * 1024]);
+    }
 
 }
 

@@ -4,6 +4,8 @@
  * 泛型好处：
  * 1、将运行时期可能出现的问题ClassCastException，转移到了编译时期，
  * 2、避免了强制转换的问题
+ *
+ * @author Haizhu
  */
 /**
  * @author Haizhu

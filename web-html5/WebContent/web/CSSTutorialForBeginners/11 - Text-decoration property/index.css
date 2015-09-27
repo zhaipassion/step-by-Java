@@ -1,16 +1,19 @@
-body{
-	color: red;
+body {
+    color: red;
 }
-h1, h2{
-	/*可以同时使用：underline，line-through，overline，none*/
-	text-decoration: none;
+
+h1, h2 {
+    /*可以同时使用：underline，line-through，overline，none*/
+    text-decoration: none;
 }
-.blue{
-	color: blue;
-	font-size: 25px;
-	font-family: Helvetica;
+
+.blue {
+    color: blue;
+    font-size: 25px;
+    font-family: Helvetica;
 }
-p.green{
-	color: green;
-	font-size: 25px;
+
+p.green {
+    color: green;
+    font-size: 25px;
 }

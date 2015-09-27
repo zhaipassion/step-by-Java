@@ -4,7 +4,7 @@ package book01.chapter02;
 
 /**
  * VM Args：-Xmx20M -XX:MaxDirectMemorySize=10M
- * 
+ *
  * @author zzm
  */
 public class DirectMemoryOOM {

@@ -1,9 +1,9 @@
 package com.books.question.StaticDemo;
 
 /**
+ * @author HZ
  * @ClassName: People
  * @Description: 会不会出现em1和em2取到同一个值的情况？
- * @author HZ
  * @date 2015年4月21日 下午9:52:01
  */
 

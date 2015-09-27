@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addressList>
-	<linkMan>
-		<name>Bob</name>
-		<email>123@gmai.com</email>
-	</linkMan>
-	<linkMan>
-		<name>Bob</name>
-		<email>123@gmai.com</email>
-	</linkMan>
+    <linkMan>
+        <name>Bob</name>
+        <email>123@gmai.com</email>
+    </linkMan>
+    <linkMan>
+        <name>Bob</name>
+        <email>123@gmai.com</email>
+    </linkMan>
 </addressList>

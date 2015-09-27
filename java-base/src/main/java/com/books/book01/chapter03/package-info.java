@@ -1,4 +1,5 @@
-/**@Title: package-info.java
+/**
+ * @Title: package-info.java
  * @ClassName: package-info
  * @Description: 第3章：Java基本的程序设计结构
  * @author HZ

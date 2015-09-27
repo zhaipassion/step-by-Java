@@ -28,7 +28,7 @@ public class RedirectController {
     public String uriTemplate(RedirectAttributes redirectAttrs) {
         redirectAttrs.addAttribute("account", "a123");  // Used as URI template variable
         redirectAttrs.addAttribute("date", new LocalDate(2011, 12, 31));  // Appended as a query
-                                                                         // parameter
+        // parameter
         return "redirect:/redirect/{account}";
     }
 
@@ -36,7 +36,7 @@ public class RedirectController {
     public String uriComponentsBuilder() {
         String date = this.conversionService.convert(new LocalDate(2011, 12, 31), String.class);
         UriComponents redirectUri = UriComponentsBuilder.fromPath("/redirect/{account}").queryParam("date", date)
-            .build().expand("a123").encode();
+                .build().expand("a123").encode();
         return "redirect:" + redirectUri.toUriString();
     }
 

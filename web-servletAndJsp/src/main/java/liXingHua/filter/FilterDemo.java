@@ -24,7 +24,7 @@ public class FilterDemo implements Filter {
      */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-        ServletException {
+            ServletException {
         System.out.println("执行doFilter方法之前");
         /**
          * 一定要记得调用此方法，不然，过滤器就会断掉，不再往下进行
@@ -35,7 +35,7 @@ public class FilterDemo implements Filter {
 
     @Override
     public void destroy() {
-       System.out.println("过滤器销毁。");
+        System.out.println("过滤器销毁。");
     }
 
 }
