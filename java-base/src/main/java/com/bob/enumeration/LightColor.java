@@ -7,7 +7,7 @@ package com.bob.enumeration;
  * @author Bob
  */
 public enum LightColor {
-    RED("RedLight", 1), YELLOW("YellowLight", 2), GREEN("GreenLight", 3); //Attention please, here is the ";" ,not ","
+    RED("RedLight", 1), YELLOW("YellowLight", 2), GREEN("GreenLight", 3); //Attention please, here is ";" ,not ","
 
     private String lightName;
     private Integer innerNum;
