@@ -1,0 +1,43 @@
+/*从外至内依次的border是：
+Margin->Bonder->Padding->Content
+每个元素都有四个border
+*/
+body {
+    color: red;
+    background-color: lime;
+}
+
+h1 {
+    text-decoration: none;
+    font-size: 150%;
+}
+
+h2 {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+p.para1 {
+    color: blue;
+    font-family: Helvetica;
+}
+
+p.para2 {
+    color: green;
+}
+
+p.para3 {
+    color: purple;
+    font-style: italic;
+}
+
+p.para4 {
+    line-height: 1.5em;
+    background-color: yellow;
+    /*content与border之间的距离*/
+    padding: 20px;
+    /*border边框的属性*/
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
