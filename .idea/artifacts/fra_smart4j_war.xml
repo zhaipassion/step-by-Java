@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="fra-smart4j:war">
-    <output-path>$PROJECT_DIR$/fra-smart4j/target</output-path>
-    <root id="archive" name="smart4j.war">
-      <element id="artifact" artifact-name="fra-smart4j:war exploded" />
-    </root>
-  </artifact>
-</component>

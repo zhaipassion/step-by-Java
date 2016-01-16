@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="web-xml:war">
-    <output-path>$PROJECT_DIR$/web-xml/target</output-path>
-    <root id="archive" name="xml.war">
-      <element id="artifact" artifact-name="web-xml:war exploded" />
-    </root>
-  </artifact>
-</component>
