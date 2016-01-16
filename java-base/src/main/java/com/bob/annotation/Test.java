@@ -11,10 +11,10 @@ public class Test {
 
         for (Method method : methods) {
             SayHiAnnotation annotationTmp = null;
-            if ((annotationTmp = method.getAnnotation(SayHiAnnotation.class)) != null) // 检测是否使用了我们的注解
-                method.invoke(element, annotationTmp.paramValue()); // 如果使用了我们的注解，我们就把注解里的"paramValue"参数值作为方法参数来调用方法
+            if ((annotationTmp = method.getAnnotation(SayHiAnnotation.class)) != null) // 检测是否使用了注解
+                method.invoke(element, annotationTmp.paramValue()); // 如果使用了注解，就把注解里的"paramValue"参数值作为方法参数来调用方法
             else
-                method.invoke(element, "Rose"); // 如果没有使用我们的注解，我们就需要使用普通的方式来调用方法了
+                method.invoke(element, "Rose"); // 如果没有使用我们的注解，就需要使用普通的方式来调用方法了
         }
     }
 }

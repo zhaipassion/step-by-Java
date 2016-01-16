@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web-javaScript:war">
+    <output-path>$PROJECT_DIR$/web-javaScript/target</output-path>
+    <root id="archive" name="javaScript.war">
+      <element id="artifact" artifact-name="web-javaScript:war exploded" />
+    </root>
+  </artifact>
+</component>

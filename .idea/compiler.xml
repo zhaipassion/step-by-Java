@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="java-base" />
+        <module name="java-design-patterns" />
+        <module name="java-jvm" />
+        <module name="java-thread" />
+        <module name="web-bootStrap" />
+        <module name="web-html5" />
+        <module name="web-jQueryDemo" />
+        <module name="web-sessionAndCookie" />
+        <module name="web-xml" />
+      </profile>
+      <profile default="false" name="Annotation profile for fra-smart4j" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fra-smart4j" />
+      </profile>
+      <profile default="false" name="Annotation profile for web-servletAndJsp" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="web-servletAndJsp" />
+      </profile>
+      <profile default="false" name="Annotation profile for fra-spring" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fra-spring" />
+      </profile>
+      <profile default="false" name="Annotation profile for web-javaScript" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="web-javaScript" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fra-smart4j" target="1.8" />
+      <module name="fra-spring" target="1.7" />
+      <module name="java-base" target="1.7" />
+      <module name="java-design-patterns" target="1.7" />
+      <module name="java-jvm" target="1.7" />
+      <module name="java-thread" target="1.7" />
+      <module name="stepBy" target="1.7" />
+      <module name="utilsLib" target="1.7" />
+      <module name="web-bootStrap" target="1.7" />
+      <module name="web-html5" target="1.7" />
+      <module name="web-javaScript" target="1.7" />
+      <module name="web-jQueryDemo" target="1.7" />
+      <module name="web-servletAndJsp" target="1.7" />
+      <module name="web-sessionAndCookie" target="1.7" />
+      <module name="web-xml" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

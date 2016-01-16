@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fra-smart4j/fra-smart4j.iml" filepath="$PROJECT_DIR$/fra-smart4j/fra-smart4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fra-spring/fra-spring.iml" filepath="$PROJECT_DIR$/fra-spring/fra-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-base/java-base.iml" filepath="$PROJECT_DIR$/java-base/java-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-design-patterns/java-design-patterns.iml" filepath="$PROJECT_DIR$/java-design-patterns/java-design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-jvm/java-jvm.iml" filepath="$PROJECT_DIR$/java-jvm/java-jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-thread/java-thread.iml" filepath="$PROJECT_DIR$/java-thread/java-thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stepBy.iml" filepath="$PROJECT_DIR$/stepBy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utilsLib/utilsLib.iml" filepath="$PROJECT_DIR$/utilsLib/utilsLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-bootStrap/web-bootStrap.iml" filepath="$PROJECT_DIR$/web-bootStrap/web-bootStrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-html5/web-html5.iml" filepath="$PROJECT_DIR$/web-html5/web-html5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-jQuery/web-jQueryDemo.iml" filepath="$PROJECT_DIR$/web-jQuery/web-jQueryDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-javaScript/web-javaScript.iml" filepath="$PROJECT_DIR$/web-javaScript/web-javaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-servletAndJsp/web-servletAndJsp.iml" filepath="$PROJECT_DIR$/web-servletAndJsp/web-servletAndJsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-sessionAndCookie/web-sessionAndCookie.iml" filepath="$PROJECT_DIR$/web-sessionAndCookie/web-sessionAndCookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-xml/web-xml.iml" filepath="$PROJECT_DIR$/web-xml/web-xml.iml" />
+    </modules>
+  </component>
+</project>

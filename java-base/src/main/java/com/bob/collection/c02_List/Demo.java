@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Demo {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < 39; i++) {
             list.add(i + 1);
         }

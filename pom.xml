@@ -1,9 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.northFacing</groupId>
+    <groupId>com.bob</groupId>
     <artifactId>stepBy</artifactId>
     <version>0.1</version>
     <packaging>pom</packaging>
     <description>java study, keep going.</description>
+
+    <modules>
+        <module>fra-smart4j</module>
+        <module>fra-spring</module>
+        <module>java-base</module>
+        <module>java-design-patterns</module>
+        <module>java-jvm</module>
+        <module>java-thread</module>
+        <module>web-bootStrap</module>
+        <module>web-html5</module>
+        <module>web-javaScript</module>
+        <module>web-jQuery</module>
+        <module>web-servletAndJsp</module>
+        <module>web-sessionAndCookie</module>
+        <module>web-xml</module>
+        <module>utilsLib</module>
+    </modules>
+
 </project>
