@@ -2,6 +2,9 @@ package com.books.book03.reusing;
 //: reusing/Car.java
 // Composition with public objects.
 
+/**
+ *
+ */
 class Engine {
     public void start() {
     }
@@ -53,4 +56,6 @@ public class Car {
         car.left.window.rollup();
         car.wheel[0].inflate(72);
     }
-} ///:~
+}
+
+///:~

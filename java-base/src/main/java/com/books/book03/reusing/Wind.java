@@ -1,6 +1,10 @@
+package com.books.book03.reusing;
 //: reusing/Wind.java
 // Inheritance & upcasting.
 
+/**
+ * 继承和向上转型
+ */
 class Instrument {
     static void tune(Instrument i) {
         // ...
