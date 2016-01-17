@@ -1,9 +1,18 @@
+package com.books.book03.reusing;
 //: reusing/FinalOverridingIllusion.java
 // It only looks like you can override
 // a private or private final method.
 
 import static com.books.book03.net.mindview.util.Print.print;
 
+/**
+ * 1.使用final的原因是想要确保在继承中使方法行为保持不变，并且不会被覆写。
+ * 2.类中所有的private的方法都隐式的指定为final的。由于无法取用priavte方法，
+ * 所以也就无法覆盖它。可以对private方法添加final修饰词，但这并不能给private方法增加任何额外的意义。
+ * 3.这一问题会造成混淆，因为，如果你试图覆盖一个private方法（隐含是final的），似乎是奏效的，
+ * 而且编译器也不会报错。（Bob：但这并不是覆盖，而是继承类中创建了一个同名方法而已，因为这里方法调用的
+ * 地方，并没有涉及到向上转型，所以并不是覆盖了基类的方法。）
+ */
 class WithFinals {
     // Identical to "private" alone:
     private final void f() {
@@ -51,7 +60,10 @@ public class FinalOverridingIllusion {
         //! wf.f();
         //! wf.g();
     }
-} /* Output:
+}
+
+
+/* Output:
 OverridingPrivate2.f()
 OverridingPrivate2.g()
 *///:~

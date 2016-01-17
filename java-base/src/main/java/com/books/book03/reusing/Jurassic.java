@@ -1,3 +1,4 @@
+package com.books.book03.reusing;
 //: reusing/Jurassic.java
 // Making an entire class final.
 
@@ -22,5 +23,10 @@ public class Jurassic {
         n.f();
         n.i = 40;
         n.j++;
+        // Bob: 虽然类是final的，但是域的值是可以修改的
+        System.out.println(n.i);
+        System.out.println(n.j);
     }
-} ///:~
+}
+
+///:~
