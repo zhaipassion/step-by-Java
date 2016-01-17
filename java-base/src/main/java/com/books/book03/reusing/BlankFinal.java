@@ -1,6 +1,12 @@
+package com.books.book03.reusing;
 //: reusing/BlankFinal.java
 // "Blank" final fields.
 
+/**
+ * 空白final是指声明为final但又未给定初始值的域。
+ * 无论什么情况，编译器都确保空白final在使用前必须被初始化。
+ * （必须在域的定义处或者每个构造器中用表达式对final进行赋值）
+ */
 class Poppet {
     private int i;
 
@@ -29,4 +35,6 @@ public class BlankFinal {
         new BlankFinal();
         new BlankFinal(47);
     }
-} ///:~
+}
+
+///:~

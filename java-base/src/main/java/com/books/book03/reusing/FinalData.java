@@ -6,6 +6,11 @@ import java.util.Random;
 
 import static com.books.book03.net.mindview.util.Print.print;
 
+/**
+ * 1.既是statis优势final的域，只占用一段不能改变的存储空间
+ * 2.对于基本类型，final使数值无法改变；对于引用类型，final使引用地址无法改变，但是引用对象的属性值可以改变
+ * 3.不能因为某数据是final的，就认为在编译时可以知道它的值，比如：i4
+ */
 class Value {
     int i; // Package access
 
@@ -54,7 +59,10 @@ public class FinalData {
     public String toString() {
         return id + ": " + "i4 = " + i4 + ", INT_5 = " + INT_5;
     }
-} /* Output:
+}
+
+
+/* Output:
 fd1: i4 = 15, INT_5 = 18
 Creating new FinalData
 fd1: i4 = 15, INT_5 = 18
