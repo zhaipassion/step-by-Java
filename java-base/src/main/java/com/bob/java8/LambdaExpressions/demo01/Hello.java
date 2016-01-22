@@ -1,4 +1,4 @@
-package com.bob.java8.LambdaExpressions;
+package com.bob.java8.LambdaExpressions.demo01;
 
 import static java.lang.System.out;
 
