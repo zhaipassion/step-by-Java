@@ -19,9 +19,13 @@
 最后一种实际使用范例:
 Arrays.sort(strArray, (String s1, String s2) -> s2.length() - s1.length());
 表示实现Comparator接口，根据字符串长度排序。
+Bob:
+这个范例中，在需要Comparator接口实例对象的地方，直接使用 “()-> ……” lambda表达式来实现匿名内部类
 
 
+# 问题
+* lambda表达式的作用？
 
-Demo01: Hello.java
-Demo02:
-
+Bob：
+1.在java中，lambda表达式主要来实现匿名内部类。在Python语言中，可是实现匿名函数。
+2.
