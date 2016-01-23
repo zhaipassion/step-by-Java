@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>header demo</title>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../resource/common.css" rel="stylesheet">
+</head>
+<body>
+
+<!--navbar-default：默认导航样式，还有个黑色背景样式:navbar-inverse-->
+<!--navbar-static-top: 去掉导航条四个边角位原型的样式-->
+<!--no-margin: Bob - 为了取消margin-botton下面的20px-->
+<nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="nav-img.jpg">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">WDM Dropdown<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One More separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="page-header no-margin no-padding">
+    <div class="container-fluid">
+        <!--图片自动响应式伸缩-->
+        <img class="img-responsive" alt="ubuntuImg" src="ubuntu.png">
+    </div>
+</div>
+
+<script src="../../jQuery/jquery-2.2.0.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
