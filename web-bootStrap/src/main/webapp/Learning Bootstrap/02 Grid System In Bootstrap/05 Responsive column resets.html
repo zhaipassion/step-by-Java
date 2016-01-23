@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>单元格高度不统一而换行出错的解决方法</title>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../resource/common.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row show-grid">
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 flag1 Resize your viewport or check it out on your phone for an example.</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 flag2</div>
+
+        <!-- Add the extra clearfix for only the required viewport -->
+        <div class="clearfix visible-xs-block">你能看到我吗？</div>
+
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 flag3</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 flag4</div>
+    </div>
+
+    <div class="row show-grid">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+    </div>
+
+    <div class="row show-grid">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+    </div>
+</div>
+
+<script src="../../jQuery/jquery-2.2.0.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
