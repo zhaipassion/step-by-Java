@@ -6,6 +6,45 @@
     <title>header demo</title>
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../resource/common.css" rel="stylesheet">
+    <style type="text/css">
+
+        .site-footer {
+            background-color: #222;
+            color: #fff;
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        .bottom-footer {
+            border-top: 1px solid #b2b2b2;
+            margin-top: 10px;
+            padding-top: 10px;
+            color: #b2b2b2;
+        }
+
+        .footer-nav {
+            text-align: right;
+            list-style: none; /* li显示样式，去掉圆点(在使用了下面的display: inline之后，这里可以省略)*/
+        }
+
+        .footer-nav li {
+            display: inline; /* li显示样式，同一行显示 */
+        }
+
+        .footer-nav li:not(:first-child):before { /* 剔除第一个 */
+            content: '|';
+            padding: 0px 10px;
+        }
+
+        .footer-nav a {
+            color: #b2b2b2;
+        }
+
+        .footer-nav a:hover {
+            color: #fff;
+            text-decoration: none; /* 去掉hover时候显示的下划线 */
+        }
+    </style>
 </head>
 <body>
 
@@ -85,13 +124,39 @@
     </div>
 </div>
 
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <h4>Contact Address</h4>
+            <address>
+                #999,Street of place,<br>
+                City of place,<br>
+                Country.<br>
+            </address>
+        </div>
+        <div class="bottom-footer">
+            <div class="col-md-5">
+                @ Copyright BobZhu 2016.
+            </div>
+            <div class="col-md-7">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="../../jQuery/jquery-2.2.0.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
- <!--Bob: 导航条美化开始-->
+<!--Bob: 导航条美化开始-->
 <script src="../../jQueryPlugin/niceScroll/jquery.nicescroll.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("html").niceScroll();
     });
 </script>
