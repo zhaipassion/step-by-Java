@@ -9,3 +9,9 @@
 [gliffy](https://www.gliffy.com)
 
 
+在线教程:
+CS50:
+http://cs50.tv/2015/fall/#lectures,license
+
+
+
