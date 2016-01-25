@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Aalaap Ghag"/>
+    <title>Twitter&rsquo;s Bootstrap with Ryan Fait&rsquo;s
+        Sticky Footer and Aalaap Ghag
+        s Responsive Padding Fix</title>
+    <style>
+        html, body {
+            height: 100%;
+            background-color: #dedede; /* added to see effects*/
+            padding: 0; /* added to */
+            margin: 0; /*remove any unwanted padding and margin*/
+        }
+
+        #wrap .container {
+            background-color: lightgreen;
+            /*these 2 lines below are from the web page that I linked in the answer.
+            They allow the container to fill the entire space of the parent container and parent div.
+            I also set the height of the parent div, and the html and body tags to height: 100% as
+            per instructions on explanation in the link */
+            min-height: 100%;
+            height: auto; /* this line takes care of "more than enough content problem"  */
+        }
+
+        /* Sticky footer styles              -------------------------------------------------- */
+
+        /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto;
+            height: 100%;
+            /* Negative indent footer by it's height */
+            margin: 0 auto -60px;
+            /* I found on my computer the line above leaves a scroll bar.  To get rid of it, I pushed the sticky footer up a bit with this line of code below
+            margin: 0 auto -80px; */
+        }
+
+        /* the class below was added to ensure there was no space at the top.  Line height on H1 was adding space, but a padding of 1px to the h1 tag ensured that the light green filled the space that the h1 line height was taking(comment it out if you want to see what it did) */
+        .page-header {
+            padding: 1px;
+        }
+
+        /* Set the fixed height of the footer here */
+        #push, #footer {
+            height: 60px;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            /* added to show a difference in the footer and main content */
+        }
+
+        /* Lastly, apply responsive CSS fixes as necessary */
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        /* Custom page CSS
+              -------------------------------------------------- */
+
+        /* Not required for template or sticky footer method. */
+        .container {
+            width: auto;
+            max-width: 680px;
+        }
+
+        .container .credit {
+            margin: 20px 0;
+        }
+    </style>
+
+</head>
+<body>
+<div id="wrap">
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Sticky footer</h1>
+        </div>
+        <p class="lead">This is the sticky footer template taken from the Bootstrap web site.</p>
+        <p class="lead">How can we make this green .container div the full height of its parent #wrap div?</p>
+        <p class="lead">The solution I found is the url below.</p>
+        <p class="lead">http://v1.reinspire.net/blog/2005/10/11/css_vertical_stretch/</p>
+    </div>
+    <div id="push"></div>
+</div>
+<div id="footer">
+    <div class="container">
+        <h2> REAL Sticky footer is down here </h2>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>header demo</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../resource/common.css" rel="stylesheet">
+    <link href="sidebar.css" rel="stylesheet">
+</head>
+<body>
+<div id="bodyWrapper">
+    <nav id="navbar" class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    Brand
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">WDM Dropdown<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link1</a></li>
+                            <li><a href="#">Link2</a></li>
+                            <li><a href="#">Link3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One More separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="centerContainer" class="container-fluid no-padding">
+        <div class="col-md-2 slider">
+            <div id="slider-title" class="navs">
+                <div class="nav nav-top">
+                    <span class="iconfont"></span>
+                    用户菜单
+                </div>
+            </div>
+
+            <div id="navigation" class="slider-inner nicescroll" tabindex="5000"
+                 style="overflow: hidden; outline: none;">
+                <div class="navs">
+                    <div class="nav">
+                        <span class="iconfont"></span>
+                        候选人
+                        <span class="nav-arrow iconfont iconfont-jiantou"></span>
+                    </div>
+                    <div class="subnav  subnav-open " style="display: none;">
+                        <div class="nav  active">
+                            <a href=" /hr-web/hr/candidate/list ">全部候选人</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/candidate/list?type=2 ">未完成</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/candidate/list?type=1 ">已完成</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/candidate/list?reject=1 ">已拒绝</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/candidate/list?isRevoke=1 ">已撤销</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/candidate/list?pending=1 ">待定</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navs">
+                    <div class="nav">
+                        <span class="iconfont"></span>
+                        职位
+                        <span class="nav-arrow iconfont iconfont-jiantou"></span>
+                    </div>
+                    <div class="subnav" style="display: none;">
+                        <div class="nav">
+                            <a href=" /hr-web/hr/jobInfo/list ">全部职位</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/jobInfo/list?status=1 ">进行中</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/jobInfo/list?status=2 ">已暂停</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/jobInfo/list?status=4 ">已关闭</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/jobApply/list ">职位申请</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navs">
+                    <div class="nav">
+                        <span class="iconfont"></span>
+                        猎头
+                        <span class="nav-arrow iconfont iconfont-jiantou"></span>
+                    </div>
+                    <div class="subnav" style="display: none;">
+                        <div class="nav">
+                            <a href=" /hr-web/hr/lietou/list ">猎头</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navs">
+                    <div class="nav">
+                        <span class="iconfont"></span>
+                        个人中心
+                        <span class="nav-arrow iconfont iconfont-jiantou"></span>
+                    </div>
+                    <div class="subnav" style="display: none;">
+                        <div class="nav">
+                            <a href=" /hr-web/hr/bizMessage/list ">我的消息</a>
+                        </div>
+                        <div class="nav">
+                            <a href="javascript:;">个人信息</a>
+                        </div>
+                        <div class="nav">
+                            <a href="javascript:;">企业资料</a>
+                        </div>
+                        <div class="nav">
+                            <a href="javascript:;">账号管理</a>
+                        </div>
+                        <div class="nav">
+                            <a href=" /hr-web/hr/userScore/list ">我的积分</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容我是右边内容
+            <div id="pushRight"></div>
+        </div>
+    </div>
+    <div id="push"></div>
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <h4>Contact Address</h4>
+            <address>
+                #999,Street of place,<br>
+                City of place,<br>
+                Country.<br>
+            </address>
+        </div>
+        <div class="bottom-footer">
+            <div class="col-md-5">
+                @ Copyright BobZhu 2016.
+            </div>
+            <div class="col-md-7">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div>
+    <script src="../jQuery/jquery-2.2.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('body').css('margin-bottom', $('.site-footer').height());
+    </script>
+</div>
+</body>
+</html>

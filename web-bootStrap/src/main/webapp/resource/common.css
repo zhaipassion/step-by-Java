@@ -23,4 +23,9 @@
 .no-padding {
     padding: 0px;
 }
+
+.no-bottom{
+    margin-bottom:0px;
+}
+
 /* 教程结束 */
