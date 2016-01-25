@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>边框图片</title>
+    <style>
+        #border_image {
+            margin:0 auto;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+            font-size:30px;
+            width:450px;
+            border:15px solid #ccc;
+
+            border-image:url(border-image.jpg) 70 repeat
+        }
+
+        #border_image2 {
+            margin:0 auto;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+            font-size:30px;
+            width:450px;
+            border:15px solid #ccc;
+
+            border-image:url(border-image.jpg) 70 repeat
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+    从序号可以看出div的四个角分别对应了背景图片的四个角。
+    而2,4,6,8 被重复。5在哪？因为是从四周向中心切割图片的所以，5显示不出来。
+</div>
+<div>
+    <img src="border-image-syntax.jpg">
+</div>
+
+<div id="border_image">
+    请为我镶嵌上漂亮的画框吧：
+</div>
+<br>
+
+<div id="border_image2">
+    请为我镶嵌上漂亮的画框吧
+</div>
+
+</body>
+</html>

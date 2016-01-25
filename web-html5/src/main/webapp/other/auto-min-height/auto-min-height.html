@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>auto-min-height</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* needed for container min-height */
+        }
+
+        div#container {
+            position: relative; /* needed for footer positioning*/
+            height: auto !important; /* real browsers */
+            min-height: 100%; /* real browsers */
+        }
+
+        div#header {
+            padding: 1em;
+            background: #efe;
+        }
+
+        div#content {
+            /* padding:1em 1em 5em; *//* bottom padding for footer */
+        }
+
+        div#footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0; /* stick to bottom */
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">header</div>
+    <div id="content">
+        content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>content<br/>
+    </div>
+    <div id="footer">
+        footer
+    </div>
+</div>
+</body>
+</html>

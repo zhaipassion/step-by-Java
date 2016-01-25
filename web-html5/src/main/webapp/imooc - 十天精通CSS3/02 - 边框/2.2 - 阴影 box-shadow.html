@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>boxshadow</title>
+    <link rel="stylesheet" href="../00%20-%20resource/common.css"/>
+    <style>
+        div {
+            background-color: #ccc9a8;
+        }
+
+        .boxshadow-outset {
+            width: 100px;
+            height: 100px;
+            box-shadow: 4px 4px 6px #666;
+        }
+
+        .boxshadow-inset {
+            width: 100px;
+            height: 100px;
+            box-shadow: 4px 4px 6px #666 inset;
+        }
+
+        .boxshadow-multi {
+            width: 100px;
+            height: 100px;
+            box-shadow: 4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #33CC00 inset;
+        }
+    </style>
+</head>
+
+<body>
+
+<div>
+    语法
+    <br><br>
+    <div class="code">
+        box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];
+    </div>
+    <div class="code">
+        box-shadow：产生一个和当前div一样大小的背景色，相当于PS中新建一个图层
+        X轴偏移量：水平方向移动 —— 向右 > 0，向左 < 0
+        Y轴偏移量：垂直方向移动 —— 向下 > 0，向上 < 0
+        [阴影模糊半径]：此参数可选，其值只能是为正值（数值小于0，投影不可见），如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊
+        [阴影扩展半径]：投影大小，可正可负
+        [阴影颜色]：投影的颜色【默认黑色】
+        [投影方式]：为空 或者 inset，表示向外和向内两种方式
+    </div>
+    <div>
+        <img src="阴影%20box-shadow.jpg">
+    </div>
+</div>
+
+<h2>外阴影</h2>
+<div class="boxshadow-outset">
+</div>
+<br/>
+<h2>内阴影</h2>
+<div class="boxshadow-inset">
+</div>
+<br/>
+<h2>多阴影</h2>
+<div class="boxshadow-multi">
+</div>
+</body>
+</html>

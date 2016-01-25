@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gradient</title>
+    <style type="text/css">
+
+        p#demo1 {
+            width: 400px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            color: #000;
+            font-size: 24px;
+            background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+        }
+        p#demo2 {
+            width: 400px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            color: #000;
+            font-size: 24px;
+            background-image: linear-gradient(to top left, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    语法：
+    CSS3 Gradient 分为线性渐变(linear)和径向渐变(radial)。由于不同的渲染引
+    擎实现渐变的语法不同，这里我们只针对线性渐变的W3C 标准语法来分析其用法，其
+    余大家可以查阅相关资料。W3C 语法已经得到了 IE10+、Firefox19.0+、Chrome26.0+
+    和 Opera12.1+等浏览器的支持。
+
+    这一小节我们来说一下线性渐变：
+    <img src="linear-gradient-syntax.jpg">
+    <img src="linear-gradient-args.jpg">
+</div>
+
+<p id="demo1">从左到右的线性渐变背景</p>
+
+<p id="demo2">右下角向左上角的线性渐变背景</p>
+</body>
+</html>

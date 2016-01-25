@@ -1,0 +1,14 @@
+.code {
+    padding: 5px 10px;
+    background: #eee;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+    font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+}

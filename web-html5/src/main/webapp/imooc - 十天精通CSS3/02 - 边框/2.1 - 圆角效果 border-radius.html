@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>border-radius</title>
+    <style type="text/css">
+
+        div {
+            background: #9da;
+        }
+
+        div.demo01 {
+            height: 100px;
+            width: 100px;
+            border-radius: 10px; /* 所有角都使用半径为10px的圆角 */
+        }
+
+        div.demo02 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px 40px 30px 20px;
+        }
+
+        div.circle {
+            height: 100px; /*与width设置一致*/
+            width: 100px;
+            border-radius: 50px; /*四个圆角值都设置为宽度或高度值的一半*/
+        }
+
+        /*任务部分*/
+        div.semi-circle {
+            height: 100px;
+            width: 50px;
+            border-radius: 50px 0 0 50px;
+        }
+
+    </style>
+</head>
+<body>
+四个角变成圆角：
+<div class="demo01">
+</div>
+<br/>
+<br/>
+<br/>
+
+四个圆角的大小可以不一样
+<div class="demo02">
+</div>
+<br/>
+<br/>
+<br/>
+
+
+
+实心圆：
+<div class="circle">
+</div>
+<br/>
+<br/>
+<br/>
+
+<!--任务部分-->
+左半圆：
+<div class="semi-circle">
+</div>
+
+</body>
+</html>

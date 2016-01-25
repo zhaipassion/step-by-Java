@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>嵌入字体</title>
+    <link rel="stylesheet" href="../00%20-%20resource/common.css">
+    <style type="text/css">
+        @font-face {
+            font-family: "MOOC Font";
+            /*src: url("http://www.imooc.com/Amaranth-BoldItalic.otf");*/
+            src:url(Amaranth-BoldItalic.otf);
+        }
+        .default {
+            width: 340px;
+            padding: 30px;
+            color: #566F89;
+            background: #000;
+            font-size:58px;
+        }
+        .demo {
+            width: 340px;
+            padding: 30px;
+            color: #566F89;
+            background: #000;
+            font-size:58px;
+            font-family: "MOOC Font";
+        }
+    </style>
+</head>
+<body>
+<div>
+    @font-face能够加载服务器端的字体文件，让浏览器端可以显示用户电脑里没有安装的字体。
+    语法：
+    <div class="code">
+        @font-face {
+            font-family : 字体名称;
+            src : 字体文件在服务器上的相对或绝对路径;
+        }
+    </div>
+    这样设置之后，就可以像使用普通字体一样在（font-*）中设置字体样式。
+    比如：
+    <div class="code">
+        p {
+            font-size :12px;
+            font-family : "My Font";
+            /*必须项，设置@font-face中font-family同样的值*/
+        }
+    </div>
+</div>
+
+
+<div class="default">默认字体样式：IMOOC</div>
+<br>
+<div class="demo">自定义样式：IMOOC</div>
+</body>
+</html>
