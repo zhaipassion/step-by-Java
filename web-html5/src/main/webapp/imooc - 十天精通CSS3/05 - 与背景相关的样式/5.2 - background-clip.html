@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>背景裁切</title>
+    <link rel="stylesheet" href="../00%20-%20resource/common.css">
+    <style type="text/css">
+        .wrap {
+            width:220px;
+            border:20px dashed #000;
+            padding:20px;
+            font-weight:bold;
+            color:#000;
+            background:#ccc url(background.png) no-repeat;
+            background-origin: border-box;
+            background-clip: padding-box;
+            position: relative;
+        }
+        .wrap span {
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .content {
+            height:80px;
+            border:1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="code">
+    用来将背景图片做适当的裁剪以适应实际需要。
+    语法：
+</div>
+<br>
+<div class="code">
+    background-clip ： border-box | padding-box | content-box | no-clip
+</div>
+<br>
+<div class="code">
+    参数分别表示从边框、或内填充，或者内容区域向外裁剪背景。
+    no-clip表示不裁切，和参数border-box显示同样的效果。
+    backgroud-clip默认值为border-box
+
+    效果如下图所示：
+</div>
+<div>
+    <img src="background-clip.jpg">
+</div>
+<br>
+
+<div>
+    范例:
+</div>
+<div class="wrap"><span>padding</span>
+    <div class="content">content</div>
+</div>
+</body>
+</html>

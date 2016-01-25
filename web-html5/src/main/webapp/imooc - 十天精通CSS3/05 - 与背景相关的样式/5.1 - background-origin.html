@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>背景原点</title>
+    <link rel="stylesheet" href="../00%20-%20resource/common.css">
+    <style type="text/css">
+        .wrap {
+            width:220px;
+            border:20px dashed #000;
+            padding:20px;
+            font-weight:bold;
+            color:#000;
+            background:#ccc url(background.png) no-repeat; /* no-repeat 的时候 origin才生效 */
+            background-origin:border-box;
+            position: relative;
+        }
+        .wrap span {
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .content {
+            height:80px;
+            border:1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    语法：
+    <br>
+    <div class="code">
+        background-origin ： border-box | padding-box | content-box;
+    </div>
+    <br>
+    <div class="code">
+        参数分别表示背景图片是从边框，还是内边距（默认值），或者是内容区域开始显示。
+        效果如下：
+    </div>
+    <br>
+    <div>
+        <img src="background-origin-style-demo.jpg">
+    </div>
+    <br>
+    <div class="code">
+        需要注意的是，如果背景不是no-repeat，这个属性无效，它会从边框开始显示。
+    </div>
+    <br>
+</div>
+<br>
+<br>
+
+
+<div class="wrap"><span>padding</span>
+    <div class="content">content</div>
+</div>
+</body>
+</html>
