@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <div>
+        <h4>CSS position属性：</h4>
+        <div>
+            <h5>static</h5>
+            <p>
+                元素框正常生成。块级元素生成一个矩形框，作为文档流的一部分，行内元素则会
+                创建一个或多个行框，置于其父元素中。
+            </p>
+        </div>
+        <div>
+            <h5>relative</h5>
+            <div>
+                <p>
+                    相对定位：会按照元素的原始位置对该元素进行移动。元素框偏移某个距离，但元素
+                    仍保持其未定位前的形状，它原本所占的空间仍保留。
+                </p>
+                <p>
+                    Bob：也就是说使用这种移动方式对其他元素的位置不会产生影响，不会因为此元素
+                    块的移动而导致别的元素块位置发生变化。
+                </p>
+                <p></p>
+            </div>
+            <div>
+                范例:
+                相对于原来位置左移20像素：
+                h2.pos_left
+                {
+                position:relative;
+                left:-20px
+                }
+                相对于原来位置右移20像素：
+                h2.pos_right
+                {
+                position:relative;
+                left:20px
+                }
+                <div>
+                    备注：left可以换成在left，right，top，bottom中任选的一个值。
+                </div>
+            </div>
+        </div>
+        <div>
+            <h5>absolute</h5>
+            <div>
+                <p>
+                    绝对定位：元素框从文档流完全删除，并相对于其包含块定位。包含块可能是文档中的另
+                    一个元素或者是初始包含块。元素原先在正常文档流中所占的空间会关闭，就好像元素原
+                    来不存在一样。元素定位后生成一个块级框，而不论原来它在正常流中生成何种类型的框。
+                </p>
+                <p>
+                    Bob：绝对定位后，释放原来所占有的空间，所以会对其他元素块的位置会产生影响，但是
+                    定位之后的位置对其他元素不会产生影响，如果有其他元素块也排列到了那个位置，那么就
+                    会产生重叠的效果。绝对定位在最上层，比如绝对定位图片后就会覆盖文字。
+                </p>
+            </div>
+            <div>
+                范例:
+                h2.pos_abs
+                {
+                position:absolute;
+                left:100px;
+                top:150px
+                }
+            </div>
+        </div>
+        <div>
+            <h5>fixed</h5>
+            <div>
+                <p>
+                    固定定位：元素框的表现类似于将 position 设置为 absolute，不过其包含块是视窗本身。
+                </p>
+                <p>
+                    Bob：一个固定定位元素会相对于视窗来定位，这意味着即便页面滚动，
+                    它还是会停留在相同的位置。和 relative 一样， top 、 right 、 bottom 和 left 属性都可用。
+                </p>
+            </div>
+            <div>
+                范例：
+                p.one
+                {
+                position:fixed;
+                left:5px;
+                top:5px;
+                }
+                p.two
+                {
+                position:fixed;
+                top:30px;
+                right:5px;
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        CSS 规定的定位机制有哪几种？
+    </div>
+    <div>
+        <ul>
+            <li>绝对定位</li>
+            <li>浮动定位</li>
+            <li>标准文档流</li>
+        </ul>
+        <div>
+            注意：fixed定位不是CSS规定的定位机制。
+        </div>
+    </div>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>
