@@ -8,6 +8,7 @@
     <description>java study, keep going.</description>
 
     <modules>
+        <module>01 maven-demo</module>
         <module>fra-smart4j</module>
         <module>fra-spring</module>
         <module>java-base</module>

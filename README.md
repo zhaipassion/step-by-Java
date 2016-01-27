@@ -17,13 +17,32 @@ http://cs50.tv/2015/fall/#lectures,license
 http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184X+sp/courseware/b8013a2ea90a4174989bc758330c9422/53f8a6d435084015ab919439d7f5f59a/2
 清华大学：操作系统
 http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240243X_2015_T2+2015_T2/courseware/14def9edc58e4936abd418333f899836/a99db084082345c1875ca1d963c42f38/
+浙江大学：操作系统
+http://www.icourses.cn/coursestatic/course_6801.html
+北京大学：计算机组成 - 陆俊林 - （2.15 - 5.09）
+https://www.coursera.org/learn/jisuanji-zucheng
+
+
+
 中国人民解放军理工大学：网络技术与应用
 http://www.xuetangx.com/courses/course-v1:UST+UST001+sp/about
 清华大学：软件工程
 http://www.xuetangx.com/courses/course-v1:TsinghuaX+34100325X+sp/about
 
-
 https://courses.edx.org/courses/HarvardX/GSE3x/1T2015/courseware/bd6a0766fab9476491c072aea1e6ad8b/
+
+编译原理:
+https://www.coursera.org/course/compilers
+
+Scala 函数式程序设计原理（scala之父讲解）
+https://www.coursera.org/course/progfun
+
+计算机程序设计：编程原理
+https://www.udacity.com/course/design-of-computer-programs--cs212
+
+IOS教程：
+https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099
+
 
 
 
@@ -73,5 +92,15 @@ www.coursera.org
 可以选择付费获取证书方式，也可以选择旁听模式
 但并不是所有的资源都可以旁听。
 英语听力有问题的时候，可以下载字母慢慢啃。
+
+
+http://www.icourses.cn/
+中国大学精品开放课程
+
+http://www.icourse163.org/
+中国大学MOOC
+
+
+
 
 
