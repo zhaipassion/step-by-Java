@@ -9,10 +9,14 @@
 [gliffy](https://www.gliffy.com)
 
 
+
+网易云课堂知识体系结构
+http://study.163.com/curricula/cs.htm
+
+
 在线课程:
 CS50:
 http://cs50.tv/2015/fall/#lectures,license
-
 清华大学：数据结构
 http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184X+sp/courseware/b8013a2ea90a4174989bc758330c9422/53f8a6d435084015ab919439d7f5f59a/2
 清华大学：操作系统
@@ -104,3 +108,5 @@ http://www.icourse163.org/
 
 
 
+http://study.163.com/plan/planMain.htm?id=1200166
+http://mooc.study.163.com/course/ZJU-1000033001#/info
