@@ -16,6 +16,7 @@
         <module>java-base</module>
         <module>java-design-patterns</module>
         <module>java-jvm</module>
+        <module>java-netty</module>
         <module>java-thread</module>
         <module>web-bootStrap</module>
         <module>web-html5</module>

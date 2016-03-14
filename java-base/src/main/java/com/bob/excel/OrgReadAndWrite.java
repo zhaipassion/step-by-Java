@@ -81,7 +81,7 @@ public class OrgReadAndWrite {
                 String rootCode = "1";
 
                 Cell cell = cells.next();
-                String value = getCellValue(cell);
+                String value = ReadExcel001.getCellValue(cell);
                 // 名称
                 String name = value.substring(6).replace(" ", "").replace("　", "").trim();
                 // 编码
@@ -147,49 +147,6 @@ public class OrgReadAndWrite {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-    }
-
-    /**
-     * @param cell
-     * @return
-     * @Description:
-     * @author Bob
-     * @date 2014年12月15日 下午4:14:01
-     */
-    public static String getCellValue(Cell cell) {
-        String ret;
-        switch (cell.getCellType()) {
-            case HSSFCell.CELL_TYPE_BLANK:
-                ret = "";
-                break;
-            case HSSFCell.CELL_TYPE_BOOLEAN:
-                ret = String.valueOf(cell.getBooleanCellValue());
-                break;
-            case HSSFCell.CELL_TYPE_ERROR:
-                ret = null;
-                break;
-            case HSSFCell.CELL_TYPE_FORMULA:
-                Workbook wb = cell.getSheet().getWorkbook();
-                CreationHelper crateHelper = wb.getCreationHelper();
-                FormulaEvaluator evaluator = crateHelper.createFormulaEvaluator();
-                ret = getCellValue(evaluator.evaluateInCell(cell));
-                break;
-            case HSSFCell.CELL_TYPE_NUMERIC:
-                if (DateUtil.isCellDateFormatted(cell)) {
-                    DateFormat simpleDateFormat = new SimpleDateFormat("");
-                    Date theDate = cell.getDateCellValue();
-                    ret = simpleDateFormat.format(theDate);
-                } else {
-                    ret = NumberToTextConverter.toText(cell.getNumericCellValue());
-                }
-                break;
-            case HSSFCell.CELL_TYPE_STRING:
-                ret = cell.getRichStringCellValue().getString();
-                break;
-            default:
-                ret = null;
-        }
-        return ret.trim();
     }
 
     public static String UUIDUtil() {
