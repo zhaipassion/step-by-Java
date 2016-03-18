@@ -10,139 +10,52 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Fixes</key>
-			<dict>
-				<key>AddDTGP_0001</key>
-				<true/>
-				<key>AddHDMI_8000000</key>
-				<false/>
-				<key>AddIMEI_80000</key>
-				<false/>
-				<key>AddMCHC_0008</key>
-				<false/>
-				<key>AddPNLF_1000000</key>
-				<false/>
-				<key>DeleteUnused_400000</key>
-				<false/>
-				<key>FIX_ACST_4000000</key>
-				<false/>
-				<key>FIX_ADP1_800000</key>
-				<false/>
-				<key>FIX_INTELGFX_100000</key>
-				<false/>
-				<key>FIX_RTC_20000</key>
-				<false/>
-				<key>FIX_S3D_2000000</key>
-				<false/>
-				<key>FakeLPC_0020</key>
-				<false/>
-				<key>FiX_TMR_40000</key>
-				<false/>
-				<key>FiX_WAK_200000</key>
-				<false/>
-				<key>FixAirport_4000</key>
-				<false/>
-				<key>FixDarwin_0002</key>
-				<false/>
-				<key>FixDisplay_0100</key>
-				<false/>
-				<key>FixFirewire_0800</key>
-				<false/>
-				<key>FixHDA_8000</key>
-				<true/>
-				<key>FixHPET_0010</key>
-				<true/>
-				<key>FixIDE_0200</key>
-				<false/>
-				<key>FixIPIC_0040</key>
-				<true/>
-				<key>FixLAN_2000</key>
-				<false/>
-				<key>FixRegions_10000000</key>
-				<false/>
-				<key>FixSATA_0400</key>
-				<false/>
-				<key>FixSBUS_0080</key>
-				<false/>
-				<key>FixShutdown_0004</key>
-				<false/>
-				<key>FixUSB_1000</key>
-				<false/>
-				<key>NewWay_80000000</key>
-				<false/>
-			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
-			<false/>
+			<true/>
 			<key>Generate</key>
-			<dict>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-			</dict>
+			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0</string>
+		<string>darkwake=8 npci=0x2000 kext-dev-mode=1 rootless=0</string>
+		<key>Debug</key>
+		<false/>
 		<key>DefaultVolume</key>
-		<string>MacHDD</string>
+		<string>EI Capitan</string>
 		<key>Legacy</key>
-		<string>PBR</string>
-		<key>Log</key>
-		<true/>
+		<string>LegacyBiosDefault</string>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>10</integer>
+		<integer>1</integer>
 		<key>XMPDetection</key>
-		<string>NO</string>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>1</string>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x01268086</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
+			<string>No</string>
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<true/>
 			<key>FixOwnership</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -152,15 +65,19 @@
 	<dict>
 		<key>Hide</key>
 		<array>
+			<string>BOOTX64.EFI</string>
 			<string>Windows</string>
-			<string>\EFI\BOOT\BOOTX64.EFI</string>
 		</array>
 		<key>Language</key>
-		<string>en:0</string>
+		<string>zh_CN:0</string>
 		<key>Mouse</key>
 		<dict>
+			<key>DoubleClick</key>
+			<integer>500</integer>
 			<key>Enabled</key>
 			<true/>
+			<key>Mirror</key>
+			<false/>
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
@@ -169,17 +86,19 @@
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<string>First</string>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>1366x768</string>
 		<key>Theme</key>
-		<string>tonymacx86</string>
+		<string>OSS</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>DualLink</key>
+		<integer>0</integer>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -189,6 +108,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>NvidiaSingle</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -196,6 +117,8 @@
 		<true/>
 		<key>AsusAICPUPM</key>
 		<true/>
+		<key>Debug</key>
+		<false/>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
@@ -203,9 +126,77 @@
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Second Stage patch</string>
+				<key>Find</key>
+				<data>
+				hcB0a0g=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				McB0W0g=
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				QVBQTEUgU1NEAA==
+				</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Second Stage patch</string>
+				<key>Find</key>
+				<data>
+				QYjE6xE=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				QYjE6zE=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10.2-BCM94352-5 GHz-US-FCC</string>
+				<key>Find</key>
+				<data>
+				WFQAXRlUIQAA
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				VVMaBBkrIQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10-BCM94352-Airport-Extreme</string>
+				<key>Find</key>
+				<data>
+				axAAAHUN
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				axAAAJCQ
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>External icons patch</string>
@@ -220,19 +211,119 @@
 				SW50ZXJuYWw=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10-BCM94352-5GHz-US-FCC-dv</string>
+				<key>Find</key>
+				<data>
+				QYP8/3QsSA==
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				ZscGVVPrKw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Second Stage patch</string>
+				<key>Find</key>
+				<data>
+				AQAAdRc=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				AQAAdBc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10.2-BCM94352-5GHz-XT-ROW</string>
+				<key>Find</key>
+				<data>
+				WFQAXRlUIQAA
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				WFQAjahetgAJ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10.2-BT4LE-Handoff-Hotspot</string>
+				<key>Find</key>
+				<data>
+				SIXAdFwPt0g=
+				</data>
+				<key>Name</key>
+				<string>IOBluetoothFamily</string>
+				<key>Replace</key>
+				<data>
+				Qb4PAAAA61k=
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				EAcAABAHAAAFAwAAAgAAADAAAAACBQAAAAQAAAcAAAAD
+				BAAAAAQAAAkAAAAEBgAAAAQAAAkAAAA=
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSNBGraphicsFB</string>
+				<key>Replace</key>
+				<data>
+				EhMAABITAAAFAwAAAgAAADAAAAACBQAAAAQAAAcAAAAD
+				BAAAAAQAAAkAAAAEBgAAAAQAAAkAAAA=
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>BooterConfig</key>
-		<string>0x28</string>
-		<key>CsrActiveConfig</key>
-		<string>0x3</string>
+		<key>MLB</key>
+		<string>C02426301VPG36DA0</string>
+		<key>ROM</key>
+		<string>280b5c8184f2</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>04/22/11</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP81.88Z.0047.B0E.1104221557</string>
+		<key>Board-ID</key>
+		<string>Mac-94245B3640C91C81</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>08</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>ProductName</key>
+		<string>MacBookPro8,1</string>
+		<key>SerialNumber</key>
+		<string>C02F98DPDH9G</string>
 		<key>Trust</key>
 		<false/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
