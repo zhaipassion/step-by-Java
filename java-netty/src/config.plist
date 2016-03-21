@@ -18,82 +18,90 @@
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
-			<true/>
+			<false/>
 			<key>Generate</key>
-			<true/>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
+			<key>PluginType</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=8 npci=0x2000 kext-dev-mode=1 rootless=0</string>
-		<key>Debug</key>
-		<false/>
-		<key>DefaultVolume</key>
-		<string>EI Capitan</string>
+		<string>kext-dev-mode=1 dart=0 slide=0 nv_disable=1</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
+		<key>Log</key>
+		<false/>
+		<key>NeverHibernate</key>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>1</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>No</string>
+			<integer>0</integer>
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
 			<true/>
+			<key>AddClockID</key>
+			<true/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
-		<string>Nothing</string>
+		<string>VBoxHfs</string>
 	</array>
 	<key>GUI</key>
 	<dict>
-		<key>Hide</key>
-		<array>
-			<string>BOOTX64.EFI</string>
-			<string>Windows</string>
-		</array>
-		<key>Language</key>
-		<string>zh_CN:0</string>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>FullTitle</key>
+					<string>UEFI internal</string>
+					<key>Hidden</key>
+					<string>Always</string>
+					<key>Type</key>
+					<string>Other</string>
+				</dict>
+			</array>
+		</dict>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
-			<true/>
-			<key>Mirror</key>
 			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<false/>
+			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
+		<key>#ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
-		<string>OSS</string>
+		<string>Bluemac</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -108,229 +116,225 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>NvidiaSingle</key>
+		<key>InjectEDID</key>
 		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
-		<true/>
 		<key>AsusAICPUPM</key>
 		<true/>
-		<key>Debug</key>
-		<false/>
-		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
+		<key>AppleRTC</key>
+		<true/>
 		<key>KernelLapic</key>
-		<false/>
+		<true/>
 		<key>KernelPm</key>
-		<false/>
+		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Second Stage patch</string>
-				<key>Find</key>
-				<data>
-				hcB0a0g=
-				</data>
+				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.9.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>9oDUAAAAgHU6</data>
 				<key>Replace</key>
-				<data>
-				McB0W0g=
-				</data>
+				<data>9oDUAAAAgOs6</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
 				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
+				<data>9oDUAAAAgHU0</data>
+				<key>Replace</key>
+				<data>9oDUAAAAgOs0</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable XHCI 1.0 check, 10.9.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>Zj0AAQ==</data>
+				<key>Replace</key>
+				<data>Zj0AAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable XHCI 1.0 check, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>QbzHAgDgPQABAAA=</data>
+				<key>Replace</key>
+				<data>QbzHAgDgPQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patch MSI or pin interrupts #1, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>QcdHCAAAQAA=</data>
+				<key>Replace</key>
+				<data>QcdHCAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patch MSI or pin interrupts #2, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>gUkIAABAAA==</data>
+				<key>Replace</key>
+				<data>gUkIAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable the sleep code leaving the controller in non-working state after wake, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>xoDIAAAAAQ==</data>
+				<key>Replace</key>
+				<data>xoDIAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable PCI power management if there is no such code in DSDT, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>dU1Ii7voAQAA</data>
+				<key>Replace</key>
+				<data>601Ii7voAQAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
 				<string>IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Second Stage patch</string>
-				<key>Find</key>
-				<data>
-				QYjE6xE=
-				</data>
+				<string>Boot graphics glitch, 10.10.2/10.10.3</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
 				<string>IOGraphicsFamily</string>
+				<key>Find</key>
+				<data>QYjE6xE=</data>
 				<key>Replace</key>
-				<data>
-				QYjE6zE=
-				</data>
+				<data>QYjE6zE=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.10.2-BCM94352-5 GHz-US-FCC</string>
-				<key>Find</key>
-				<data>
-				WFQAXRlUIQAA
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				VVMaBBkrIQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10-BCM94352-Airport-Extreme</string>
-				<key>Find</key>
-				<data>
-				axAAAHUN
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				axAAAJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10-BCM94352-5GHz-US-FCC-dv</string>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGVVPrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Second Stage patch</string>
-				<key>Find</key>
-				<data>
-				AQAAdRc=
-				</data>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>
-				AQAAdBc=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10.2-BCM94352-5GHz-XT-ROW</string>
-				<key>Find</key>
-				<data>
-				WFQAXRlUIQAA
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				WFQAjahetgAJ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10.2-BT4LE-Handoff-Hotspot</string>
-				<key>Find</key>
-				<data>
-				SIXAdFwPt0g=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA61k=
-				</data>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>
-				EAcAABAHAAAFAwAAAgAAADAAAAACBQAAAAQAAAcAAAAD
-				BAAAAAQAAAkAAAAEBgAAAAQAAAkAAAA=
-				</data>
+				<string>HDMI-audio HD3000, 0x00010000, port 0205</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
 				<string>AppleIntelSNBGraphicsFB</string>
+				<key>Find</key>
+				<data>AgUAAAAEAAAHAAAA</data>
 				<key>Replace</key>
-				<data>
-				EhMAABITAAAFAwAAAgAAADAAAAACBQAAAAQAAAcAAAAD
-				BAAAAAQAAAkAAAAEBgAAAAQAAAkAAAA=
-				</data>
+				<data>AgUAAAAIAAAHAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio HD3000, 0x00010000, port 0304</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelSNBGraphicsFB</string>
+				<key>Find</key>
+				<data>AwQAAAAEAAAJAAAA</data>
+				<key>Replace</key>
+				<data>AwQAAAAIAAAJAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio HD3000, 0x00010000, port 0406</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelSNBGraphicsFB</string>
+				<key>Find</key>
+				<data>BAYAAAAEAAAJAAAA</data>
+				<key>Replace</key>
+				<data>BAYAAAAIAAAJAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio/VGA(0602) HD3000, 0x00010000, port 0406</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelSNBGraphicsFB</string>
+				<key>Find</key>
+				<data>AQIEABAHAAAQBwAABQMAAAIAAAAwAAAAAgUAAAAEAAAHAAAAAwQAAAAEAAAJAAAABAYAAAAEAAAJAAAA</data>
+				<key>Replace</key>
+				<data>AQIDABAHAAAQBwAABgIAAAABAAAJAAAABQMAAAIAAAAwAAAABAYAAAAIAAAJAAAAAAAAAAAAAAAAAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>AQAAdRc=</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>AQAA6xc=</data>
 			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>MLB</key>
-		<string>C02426301VPG36DA0</string>
-		<key>ROM</key>
-		<string>280b5c8184f2</string>
+		<key>CsrActiveConfig</key>
+		<string>0x67</string>
+		<key>BooterConfig</key>
+		<string>0x28</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>04/22/11</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP81.88Z.0047.B0E.1104221557</string>
-		<key>Board-ID</key>
-		<string>Mac-94245B3640C91C81</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>08</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro8,1</string>
-		<key>SerialNumber</key>
-		<string>C02F98DPDH9G</string>
 		<key>Trust</key>
-		<false/>
-		<key>Version</key>
-		<string>1.0</string>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
-		<key>InjectSystemID</key>
-		<true/>
 	</dict>
 </dict>
 </plist>
