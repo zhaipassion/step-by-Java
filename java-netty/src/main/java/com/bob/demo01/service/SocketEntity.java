@@ -1,4 +1,4 @@
-package com.phei.netty.bob.demo01.service;
+package com.bob.demo01.service;
 
 /**
  * Created by Bob on 2016/3/21.

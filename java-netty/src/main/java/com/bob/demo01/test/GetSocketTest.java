@@ -1,7 +1,7 @@
-package com.phei.netty.bob.demo01.test;
+package com.bob.demo01.test;
 
-import com.phei.netty.bob.demo01.service.CommonSocket;
-import com.phei.netty.bob.demo01.service.SocketKeep;
+import com.bob.demo01.service.CommonSocket;
+import com.bob.demo01.service.SocketKeep;
 
 import java.net.Socket;
 import java.text.SimpleDateFormat;

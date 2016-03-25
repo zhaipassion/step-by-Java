@@ -1,4 +1,4 @@
-package com.phei.netty.bob.demo01.service;
+package com.bob.demo01.service;
 
 import java.io.IOException;
 import java.net.Socket;

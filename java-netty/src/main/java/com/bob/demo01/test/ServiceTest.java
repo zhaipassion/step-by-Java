@@ -1,4 +1,4 @@
-package com.phei.netty.bob.demo01.test;
+package com.bob.demo01.test;
 
 import java.net.ServerSocket;
 import java.net.Socket;

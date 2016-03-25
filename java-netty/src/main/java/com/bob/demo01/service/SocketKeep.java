@@ -1,4 +1,4 @@
-package com.phei.netty.bob.demo01.service;
+package com.bob.demo01.service;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
